@@ -25,6 +25,10 @@ The GitHub PR author is `justinborowitza` and merged status was verified for:
 
 Branch development and Cloudflare previews are grounded in Justin's prior user message in the chat titled “Ludo Club Tech Stack”. Contributions are described as selected work in a shared project. No sole authorship, public release, comprehensive release qualification or measurable commercial success is claimed.
 
+## Project visuals
+
+The five new project covers in `dist/assets/projects/` are generated conceptual illustrations. They do not represent real Fendt premises, operational screenshots, actual manufacturing parts, live QR identifiers or the actual Board Magic UI. Each displayed cover is labeled “Illustration”. Generation prompts are recorded in `ASSET-SOURCES.md`.
+
 ## Remaining fields
 
 Personal biography, education, certificates, email, LinkedIn, CV and genuine Power BI/Power Pages project examples remain open. No employers, qualifications, proficiency levels or performance statistics are invented.
