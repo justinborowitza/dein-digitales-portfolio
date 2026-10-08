@@ -15,7 +15,7 @@ Die Seite enthält vier vom Nutzer beschriebene Fendt-Projekte und das gemeinsam
 
 ## Bedienung
 
-Im Werdegang füllt sich die vertikale Linie zwischen Berufserfahrung, Ausbildung und Zertifikaten beim Scrollen. Der aktuelle Punkt leuchtet cyan, passierte Punkte werden violett ausgefüllt. Beim Zurückscrollen nimmt die Füllung wieder ab. Die Linie verbindet die tatsächlichen Mittelpunkte der Marker auch nach Größenänderungen. Projektkarten enthalten aufklappbare Bereiche für Ausgangslage, eigenen Beitrag und Ergebnis. Kopf-Navigation und Projektbereiche bleiben ohne JavaScript über Links und native Details-Elemente bedienbar.
+Im Werdegang füllt sich die vertikale Linie zwischen Berufserfahrung, Ausbildung und Zertifikaten beim Scrollen. Der aktuelle Punkt leuchtet cyan, passierte Punkte werden violett ausgefüllt. Beim Zurückscrollen nimmt die Füllung wieder ab. Die Linie verbindet die tatsächlichen Mittelpunkte der Marker auch nach Größenänderungen. Die fünf Praxisprojekte zeigen jeweils eine generierte Konzeptillustration, eine Überschrift und direkt sichtbare Erklärungen. Die Bilder sind keine Firmenansichten oder tatsächlichen App-Screenshots. Board Magic verlinkt die vier ausgewählten eigenen Beiträge. Der zusätzliche Power-Platform-Überblick bleibt aufklappbar. Kopf-Navigation und diese Bereiche sind ohne JavaScript bedienbar.
 
 ## Produkticons
 
