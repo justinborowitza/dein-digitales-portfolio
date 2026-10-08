@@ -1,7 +1,6 @@
-function getTimelineProgress(offsets, position, atBottom) {
+function getToolboxProgress(offsets, position) {
   const last = offsets.length - 1;
   if (last <= 0) return { active: 0, progress: 0 };
-  if (atBottom) return { active: last, progress: 1 };
   let active = 0;
   for (let i = 1; i <= last; i += 1) {
     if (position >= offsets[i]) active = i;
@@ -14,12 +13,13 @@ function getTimelineProgress(offsets, position, atBottom) {
 
 if (typeof document !== 'undefined') {
   (() => {
-    const timeline = document.querySelector('.timeline');
-    if (!timeline) return;
-    const rows = Array.from(timeline.querySelectorAll('.timeline-row'));
-    const markers = rows.map(row => row.querySelector('.timeline-index'));
+    const toolbox = document.querySelector('.toolbox');
+    if (!toolbox) return;
+    const rows = Array.from(toolbox.querySelectorAll('.tool-row'));
+    const markers = rows.map(row => row.querySelector('.tool-number'));
     if (!rows.length || markers.some(marker => !marker)) return;
-    const progressbar = timeline.querySelector('[role="progressbar"]');
+    const progressbar = toolbox.querySelector('[role="progressbar"]');
+    if (!progressbar) return;
     let offsets = [];
     let frame = 0;
 
@@ -27,12 +27,12 @@ if (typeof document !== 'undefined') {
       frame = 0;
       const scroll = window.scrollY;
       const position = scroll + window.innerHeight * .65;
-      const state = getTimelineProgress(offsets, position, false);
+      const state = getToolboxProgress(offsets, position);
       const started = position >= offsets[0];
-      timeline.style.setProperty('--timeline-progress', String(state.progress));
+      toolbox.style.setProperty('--tool-progress', String(state.progress));
       progressbar.setAttribute('aria-valuenow', String(Math.round(state.progress * 100)));
-      const label = rows[state.active].querySelector('.timeline-kind').textContent.trim();
-      progressbar.setAttribute('aria-valuetext', started ? `${label}, Station ${state.active + 1} von ${rows.length}` : 'Werdegang noch nicht erreicht');
+      const label = rows[state.active].querySelector('h3').textContent.trim();
+      progressbar.setAttribute('aria-valuetext', started ? `${label} Schwerpunkt ${state.active + 1} von ${rows.length}` : 'Werkzeugkasten noch nicht erreicht');
       rows.forEach((row, index) => {
         row.classList.toggle('is-complete', started && index < state.active);
         row.classList.toggle('is-active', started && index === state.active);
@@ -48,9 +48,9 @@ if (typeof document !== 'undefined') {
         const rect = marker.getBoundingClientRect();
         return rect.top + rect.height / 2 + window.scrollY;
       });
-      const top = timeline.getBoundingClientRect().top + window.scrollY;
-      timeline.style.setProperty('--timeline-start', `${offsets[0] - top}px`);
-      timeline.style.setProperty('--timeline-length', `${Math.max(0, offsets[offsets.length - 1] - offsets[0])}px`);
+      const top = toolbox.getBoundingClientRect().top + window.scrollY;
+      toolbox.style.setProperty('--tool-start', `${offsets[0] - top}px`);
+      toolbox.style.setProperty('--tool-length', `${Math.max(0, offsets[offsets.length - 1] - offsets[0])}px`);
       schedule();
     }
 
@@ -62,7 +62,7 @@ if (typeof document !== 'undefined') {
     if ('ResizeObserver' in window) {
       const observer = new ResizeObserver(measure);
       observer.observe(document.querySelector('main'));
-      observer.observe(timeline);
+      observer.observe(toolbox);
     }
     measure();
   })();
