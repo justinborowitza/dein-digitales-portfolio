@@ -414,9 +414,10 @@
     </section>
 
     <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="wrap">
-        <div class="section-head"><div><p class="eyebrow">Was ich damit umsetze</p><h2 id="skills-title">Mein<br/>Werkzeugkasten.</h2></div><p>Von der ersten Auswertung bis zur nutzbaren Anwendung: Diese Werkzeuge kommen in meinen Projekten zum Einsatz.</p></div>
+      <div class="wrap skills-layout">
+        <div class="section-head skills-intro"><div><p class="eyebrow">Was ich damit umsetze</p><h2 id="skills-title">Mein<br/>Werkzeugkasten.</h2></div><p>Von der ersten Auswertung bis zur nutzbaren Anwendung: Diese Werkzeuge kommen in meinen Projekten zum Einsatz.</p></div>
         <div class="toolbox">
+          <div class="tool-track" role="progressbar" aria-label="Lesefortschritt durch meinen Werkzeugkasten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="tool-fill"></span></div>
           <article class="tool-row"><span class="tool-number" aria-hidden="true">01</span><div class="tool-main"><h3>Daten auswerten.</h3><p>SAP-Exporte in Excel aufbereiten und mit Pivot-Analysen monatliche Kennzahlen für das Reporting sichtbar machen.</p></div><div class="tool-meta"><div class="tool-signature"><span class="tool-wordmark" aria-hidden="true">XLS</span><span>Excel · SAP-Exporte<br/>Pivot-Analysen</span></div><a href="#fendt-reporting">Reporting bei Fendt</a></div></article>
           <article class="tool-row"><span class="tool-number" aria-hidden="true">02</span><div class="tool-main"><h3>Anwendungen entwickeln.</h3><p>Arbeitsabläufe in Power Apps abbilden – mit SharePoint als Datenbasis und einer Oberfläche in sieben Sprachen.</p></div><div class="tool-meta"><div class="tool-signature"><img src="assets/power-apps.svg" width="40" height="40" alt="" loading="lazy" /><span>Power Apps<br/>SharePoint</span></div><a href="#fendt-pforten-app">Pforten-App ansehen</a></div></article>
           <article class="tool-row"><span class="tool-number" aria-hidden="true">03</span><div class="tool-main"><h3>Routine automatisieren.</h3><p>Wiederkehrende Schritte mit Power Automate übernehmen lassen, etwa die monatliche Archivierung und Bereinigung von SharePoint-Listen.</p></div><div class="tool-meta"><div class="tool-signature"><img src="assets/power-automate.svg" width="40" height="40" alt="" loading="lazy" /><span>Power Automate<br/>SharePoint-Listen</span></div><a href="#fendt-pforten-app">Monatliche Archivierung</a></div></article>
@@ -428,14 +429,13 @@
     </section>
 
     <section class="section" id="profil" aria-labelledby="profile-title">
-      <div class="wrap profile">
-        <div class="profile-copy"><p class="eyebrow">Der Mensch hinter den Projekten</p><h2 id="profile-title">Mein Weg.<br/>Meine Erfahrung.</h2><p class="profile-intro">Ich studiere Wirtschaftsinformatik an der THA und befinde mich aktuell im 7. Semester.</p><p class="profile-intro">Bei Fendt habe ich an Datenanalysen, Reporting und digitalen Anwendungen gearbeitet. Dazu gehören die eigenständig realisierte Pforten-App sowie Prototypen für Dokumenterzeugung und QR-Code-Generierung.</p><p class="profile-note">Neben diesen Praxisprojekten arbeite ich am gemeinsamen Flutter-Spiel Board Magic.</p></div>
-        <div class="timeline" aria-label="Mein Werdegang">
-          <div class="timeline-track" role="progressbar" aria-label="Fortschritt durch meinen Werdegang" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="timeline-fill"></span></div>
-          <div class="timeline-row"><span class="timeline-index">01</span><div><span class="timeline-kind">Pflichtpraktikum / Fendt</span><h3>PKPS – System- und Technologieplanung</h3><p>Excel-Reporting auf Basis von SAP-Exporten, Fullstack-Entwicklung eines Dokumenten-PoCs, eine weiterhin produktiv genutzte Power-Apps-Pforten-App mit monatlicher Archivierung sowie ein API-gestützter QR-Code-Prototyp.</p><a class="timeline-project-link" href="#fendt-reporting">Zu den Fendt-Projekten</a><span class="timeline-empty">Bis 31.03.2026 · Startdatum wird ergänzt</span></div></div>
-          <div class="timeline-row"><span class="timeline-index">02</span><div><span class="timeline-kind">Studium / THA</span><h3>Wirtschaftsinformatik</h3><p>Ich befinde mich aktuell im 7. Semester meines Wirtschaftsinformatikstudiums an der THA.</p><span class="timeline-current">7. Semester · Laufendes Studium</span></div></div>
-          <div class="timeline-row"><span class="timeline-index">03</span><div><span class="timeline-kind">Zertifikate</span><h3>Nachweise &amp; Qualifikationen</h3><p>Vorhandene Zertifikate mit Datum und überprüfbarem Nachweis werden ergänzt.</p><span class="timeline-empty">Nachweise folgen</span></div></div>
+      <div class="wrap profile-overview">
+        <div class="profile-heading"><p class="eyebrow">Der Mensch hinter den Projekten</p><h2 id="profile-title">Mein Weg.<br/>Meine Erfahrung.</h2><p>Ich studiere Wirtschaftsinformatik an der THA. Meine praktische Erfahrung reicht von Datenanalysen bei Fendt bis zur gemeinsamen Entwicklung von Board Magic.</p></div>
+        <div class="profile-grid">
+          <article class="profile-panel profile-study"><div class="profile-panel-top"><span>Studium</span><span class="profile-status">Aktuell</span></div><h3>Wirtschaftsinformatik</h3><p class="profile-organization">THA</p><div class="study-semester"><strong>7.</strong><span>Semester<br/><small>Laufendes Studium</small></span></div><p>Im Studium beschäftige ich mich mit der Verbindung von Wirtschaft und Informatik. Praktische Projekte ergänzen meinen fachlichen Weg.</p></article>
+          <article class="profile-panel profile-practice"><div class="profile-panel-top"><span>Praxiserfahrung</span><span class="profile-status">Pflichtpraktikum</span></div><h3>Fendt</h3><p class="profile-organization">PKPS – System- und Technologieplanung</p><p class="profile-period">Praktikum bis 31.03.2026</p><ul class="profile-highlights"><li>Datenanalyse und Reporting mit Excel und SAP-Exporten</li><li>Eigenständige Entwicklung einer weiterhin produktiv genutzten Pforten-App</li><li>Prototypen für Dokumenterzeugung und QR-Code-Nachverfolgung</li></ul><a class="profile-link" href="#fendt-reporting">Meine Fendt-Projekte ansehen</a></article>
         </div>
+        <div class="profile-personal"><span class="profile-personal-label">Neben dem Studium</span><div><h3>Gemeinsam an Board Magic arbeiten.</h3><p>Im gemeinsamen Flutter-Projekt arbeite ich an Oberflächen, Dialogen und Tests. Dabei entwickle ich Änderungen auf eigenen Branches und arbeite über GitHub mit dem Team zusammen.</p><a class="profile-link" href="#board-magic">Zum Spieleprojekt und meinen Beiträgen</a></div></div>
       </div>
     </section>
 

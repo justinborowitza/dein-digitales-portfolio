@@ -5,9 +5,9 @@ Ein statisches Portfolio für Power BI, Power Apps, Power Automate und Power Pag
 ## Dateien
 
 - `dist/index.html` enthält Seite, Texte und das Grundlayout.
-- `dist/portfolio.css` ergänzt Produktlogos, Technologiegruppen und den animierten Werdegang.
-- Der Werkzeugkasten zeigt sechs offene Kompetenzzeilen mit konkreten Anwendungen, Werkzeugen und Projektlinks. Das Studium an der THA im 7. Semester ist im Profil und Werdegang ergänzt.
-- `dist/portfolio.js` steuert die Fortschrittslinie und aktiven Punkte im Werdegang.
+- `dist/portfolio.css` ergänzt Produktlogos, den animierten Werkzeugkasten und das persönliche Profil.
+- Der Werkzeugkasten zeigt sechs Kompetenzzeilen mit konkreten Anwendungen, Werkzeugen und Projektlinks. Die Überschrift bleibt auf großen Bildschirmen beim Scrollen stehen.
+- `dist/portfolio.js` steuert die Fortschrittslinie und aktiven Punkte im Werkzeugkasten.
 - `dist/hero-art.png` enthält das vorhandene violett-silberne 3D-Emblem.
 - `dist/favicon.svg` enthält das passende JB-Planetenzeichen.
 - `.openai/hosting.json` legt den statischen Veröffentlichungsordner fest.
@@ -16,7 +16,7 @@ Die Seite enthält vier vom Nutzer beschriebene Fendt-Projekte und das gemeinsam
 
 ## Bedienung
 
-Im Werdegang füllt sich die vertikale Linie zwischen Berufserfahrung, Ausbildung und Zertifikaten beim Scrollen. Der aktuelle Punkt leuchtet cyan, passierte Punkte werden violett ausgefüllt. Beim Zurückscrollen nimmt die Füllung wieder ab. Die Linie verbindet die tatsächlichen Mittelpunkte der Marker auch nach Größenänderungen. Die fünf Praxisprojekte zeigen jeweils eine generierte Konzeptillustration, eine Überschrift und direkt sichtbare Erklärungen. Die Bilder sind keine Firmenansichten oder tatsächlichen App-Screenshots. Board Magic verlinkt die vier ausgewählten eigenen Beiträge. Der zusätzliche Power-Platform-Überblick bleibt aufklappbar. Kopf-Navigation und diese Bereiche sind ohne JavaScript bedienbar.
+Im Werkzeugkasten füllt sich die vertikale Linie zwischen den sechs Schwerpunkten beim Scrollen. Der aktuelle Punkt leuchtet cyan, passierte Punkte werden violett ausgefüllt. Beim Zurückscrollen nimmt die Füllung wieder ab. Die Linie verbindet die tatsächlichen Mittelpunkte der Marker auch nach Größenänderungen; sie zeigt Lesefortschritt, keinen Kenntnisstand. Das Profil enthält einen persönlichen Einstieg, zwei Blöcke für das laufende THA-Studium im 7. Semester und das Fendt-Pflichtpraktikum sowie einen separaten Abschnitt zum gemeinsamen Board-Magic-Projekt. Zertifikate werden mit konkreten Nachweisen ergänzt. Die fünf Praxisprojekte zeigen jeweils eine generierte Konzeptillustration, eine Überschrift und direkt sichtbare Erklärungen. Die Bilder sind keine Firmenansichten oder tatsächlichen App-Screenshots. Board Magic verlinkt die vier ausgewählten eigenen Beiträge. Der zusätzliche Power-Platform-Überblick bleibt aufklappbar. Kopf-Navigation und diese Bereiche sind ohne JavaScript bedienbar.
 
 ## Produkticons
 
