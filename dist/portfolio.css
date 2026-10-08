@@ -21,6 +21,28 @@ h1 { font-size: clamp(56px, 7vw, 98px); }
 .product-caption { position: absolute; bottom: 15px; color: #b8a8cb; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; }
 .project-body { padding: 25px; }
 .project-body h3 { margin: 17px 0 12px; font-size: 28px; }
+.practice-projects { margin-bottom: 28px; }
+.practice-preview { height: 205px; }
+.project-typography { font-family: 'Archivo Black',sans-serif; font-size: clamp(40px,5vw,64px); line-height: 1; letter-spacing: -.06em; color: var(--lavender); text-align: center; }
+.project-typography > span { display: block; margin-top: 12px; font-family: 'DM Sans',sans-serif; font-size: 14px; letter-spacing: .25em; color: var(--cyan); }
+.project-status { color: var(--lavender); text-transform: none; letter-spacing: 0; font-size: 12px; }
+.practice-projects .project-top { gap: 12px; flex-wrap: wrap; font-size: 12px; letter-spacing: .06em; }
+.practice-projects .project-description { font-size: 16px; }
+.practice-projects .tags li { font-size: 12px; }
+.practice-projects .project-case summary { font-size: 14px; }
+.practice-projects .case-content dt { font-size: 12px; }
+.practice-projects .case-content dd { font-size: 15px; color: #bcb2c9; }
+.practice-projects .preview-label, .practice-projects .product-caption { font-size: 11px; letter-spacing: .1em; }
+.game-project { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(220px,.75fr) minmax(0,1.25fr); }
+.game-project .project-preview { height: auto; min-height: 260px; border-bottom: 0; border-right: 1px solid var(--line); }
+.planned-projects { padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.planned-projects > summary { color: var(--silver); cursor: pointer; font-size: 15px; }
+.planned-projects[open] > summary { margin-bottom: 24px; }
+.skill-state a { color: var(--lavender); text-underline-offset: 4px; }
+.contribution-list { margin: 0; padding-left: 18px; display: grid; gap: 12px; }
+.contribution-list a { color: var(--lavender); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.contribution-list a:hover { color: var(--cyan); }
+.timeline-project-link { display: block; margin-top: 14px; font-size: 14px; color: var(--lavender); text-underline-offset: 4px; }
 .project-description { margin-bottom: 17px; color: #aaa3b7; font-size: 13px; line-height: 1.7; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; list-style: none; margin: 0; }
 .tags li { padding: 5px 9px; border: 1px solid #b590df29; background: #b180dd09; color: #bcb0cd; font-size: 10px; border-radius: 3px; }
@@ -66,6 +88,8 @@ h1 { font-size: clamp(56px, 7vw, 98px); }
   .product-platform { width: 144px; height: 144px; }
   .product-logo { width: 96px; height: 96px; }
   .project-body { padding: 22px; }
+  .game-project { display: block; }
+  .game-project .project-preview { min-height: 207px; border-right: 0; border-bottom: 1px solid var(--line); }
   .skill-group { padding: 24px; }
   .contact-inner { display: block; }
   .contact-links { margin-top: 34px; }

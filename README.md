@@ -11,7 +11,7 @@ Ein statisches Portfolio für Power BI, Power Apps, Power Automate und Power Pag
 - `dist/favicon.svg` enthält das passende JB-Planetenzeichen.
 - `.openai/hosting.json` legt den statischen Veröffentlichungsordner fest.
 
-Die Projektkarten, Technologiegruppen und der Erfahrungsbereich sind zunächst als Gerüst angelegt. Die offiziellen Produkticons kennzeichnen die jeweiligen Microsoft-Technologien. Kenntnisstände und Ergebnisse werden nicht als vorhanden behauptet. Die konkreten Projektgeschichten, Stationen, Kontaktlinks und der Lebenslauf werden ergänzt, sobald die Inhalte vorliegen.
+Die Seite enthält vier vom Nutzer beschriebene Fendt-Projekte und das gemeinsame Flutter-Spiel Board Magic. Ausgewählte eigene Beiträge zu Board Magic sind durch gemergte GitHub-PRs verlinkt. Der Fendt-Eintrag beschreibt das Pflichtpraktikum in PKPS – System- und Technologieplanung. Noch fehlende Angaben bleiben ausdrücklich offen. Die offiziellen Produkticons kennzeichnen die jeweiligen Microsoft-Technologien. Weitere Power-Platform-Projektplätze sind aufklappbar; Power BI und Power Pages bleiben vorläufige Plätze. Kontaktlinks, Unterlagen und weitere Stationen werden ergänzt, sobald die Inhalte vorliegen. Quellen und Inhaltsgrenzen stehen in `PROJECT-CONTENT.md`.
 
 ## Bedienung
 
