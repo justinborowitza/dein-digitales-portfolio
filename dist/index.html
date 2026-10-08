@@ -308,6 +308,8 @@
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     }
   </style>
+  <link rel="stylesheet" href="portfolio.css" />
+  <script src="portfolio.js" defer></script>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -317,116 +319,123 @@
       <span><span class="brand-name">JUSTIN BOROWITZA</span><span class="brand-label">Portfolio · Power Platform</span></span>
     </a>
     <nav class="topnav" aria-label="Hauptnavigation">
-      <a href="#projekte">Projekte</a>
-      <a href="#profil">Über mich</a>
+      <a href="#projekte">Projekte</a><a href="#skills">Skills</a><a href="#profil">Erfahrung</a>
       <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
-
+  <nav class="scroll-rail" aria-label="Abschnitte im Portfolio">
+    <div class="rail-track" role="progressbar" aria-label="Fortschritt durch das Portfolio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="rail-fill"></span></div>
+    <ol class="rail-links">
+      <li><a class="is-active" href="#start" aria-current="location"><span class="rail-dot" aria-hidden="true"></span><span class="rail-label">Start</span></a></li>
+      <li><a href="#projekte"><span class="rail-dot" aria-hidden="true"></span><span class="rail-label">Projekte</span></a></li>
+      <li><a href="#skills"><span class="rail-dot" aria-hidden="true"></span><span class="rail-label">Skills</span></a></li>
+      <li><a href="#profil"><span class="rail-dot" aria-hidden="true"></span><span class="rail-label">Erfahrung</span></a></li>
+      <li><a href="#kontakt"><span class="rail-dot" aria-hidden="true"></span><span class="rail-label">Kontakt</span></a></li>
+    </ol>
+  </nav>
   <main>
     <section class="hero wrap" id="start" aria-labelledby="hero-title">
       <div class="wirefield" aria-hidden="true">
         <svg viewBox="0 0 1500 850" preserveAspectRatio="none">
           <defs><linearGradient id="wire" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#67e8ff" stop-opacity="0"/><stop offset=".45" stop-color="#9160d3" stop-opacity=".34"/><stop offset="1" stop-color="#67e8ff" stop-opacity="0"/></linearGradient></defs>
-          <path class="wire" d="M-80 228 C 240 90, 430 360, 710 220 S 1160 100, 1580 260" />
-          <path class="wire" d="M-100 510 C 230 370, 460 690, 740 500 S 1190 390, 1590 590" />
-          <path class="wire" d="M-80 690 C 260 540, 490 830, 790 670 S 1210 540, 1590 720" />
+          <path class="wire" d="M-80 228 C 240 90, 430 360, 710 220 S 1160 100, 1580 260"/>
+          <path class="wire" d="M-100 510 C 230 370, 460 690, 740 500 S 1190 390, 1590 590"/>
+          <path class="wire" d="M-80 690 C 260 540, 490 830, 790 670 S 1210 540, 1590 720"/>
         </svg>
       </div>
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Persönliches Portfolio · Power Platform</p>
-          <h1 id="hero-title"><span class="title-light">Aus Ideen</span><span class="title-violet">werden Lösungen.</span></h1>
-          <p class="intro">Einblicke in Projekte mit Power BI, Power Apps, Power Automate und Power Pages – zusammen mit meinem Weg und den Erfahrungen dahinter.</p>
+          <p class="eyebrow">Daten · Apps · Automatisierung</p>
+          <h1 id="hero-title"><span class="title-light">Aus Ideen</span><span class="title-violet">werden</span><span class="title-violet">Lösungen.</span></h1>
+          <p class="intro">Ich bin Justin. Hier bekommen meine Projekte mit der Microsoft Power Platform einen Platz – zusammen mit meinem Weg, meiner Arbeitsweise und den Erfahrungen dahinter.</p>
           <div class="hero-actions">
             <a class="button" href="#projekte"><span class="button-dot" aria-hidden="true"></span>Projekte ansehen</a>
-            <a class="quiet-link" href="#profil">Mein Profil <span aria-hidden="true">↘</span></a>
+            <button class="button button-disabled" type="button" disabled aria-describedby="draft-note">Lebenslauf folgt</button>
           </div>
-          <p class="hero-note">Daten · Anwendungen · Automatisierung</p>
+          <p class="draft-status" id="draft-note">Portfolio im Aufbau · Projektinhalte und Lebenslauf folgen</p>
+          <p class="hero-note">Power BI / Power Apps / Power Automate / Power Pages</p>
         </div>
-
-        <div class="art-wrap" role="img" aria-label="Violett-silbernes 3D-Emblem vor einem dunklen, animierten Planeten mit Orbitbahnen">
-          <div class="art-halo" aria-hidden="true"></div>
-          <div class="planet" aria-hidden="true"></div>
-          <div class="orbit" aria-hidden="true"></div>
-          <img class="art-object" src="hero-art.png" alt="" />
+        <div class="art-wrap" role="img" aria-label="Violett-silbernes 3D-Emblem vor einem animierten Planeten mit Orbitbahnen">
+          <div class="art-halo" aria-hidden="true"></div><div class="planet" aria-hidden="true"></div><div class="orbit" aria-hidden="true"></div>
+          <img class="art-object" src="hero-art.png" width="1536" height="1024" alt="" fetchpriority="high"/>
           <div class="orbit orbit-two" aria-hidden="true"></div>
-          <span class="art-index" aria-hidden="true">JB · PERSONAL PORTFOLIO</span>
-          <span class="art-label" aria-hidden="true"><strong>01</strong> / POWER PLATFORM</span>
+          <span class="art-index" aria-hidden="true">JB · PERSONAL PORTFOLIO</span><span class="art-label" aria-hidden="true"><strong>01</strong> / POWER PLATFORM</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="projekte" aria-labelledby="projects-title">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Werkzeuge in Aktion</p>
-            <h2 id="projects-title">Projekte im Fokus<span class="section-number">01 / 04</span></h2>
-          </div>
-          <p>Die Grundstruktur steht. Als Nächstes ergänzen wir deine konkreten Projekte, Bilder und Ergebnisse.</p>
-        </div>
+        <div class="section-head"><div><p class="eyebrow">Von der Idee zur Anwendung</p><h2 id="projects-title">Ausgewählte<br/>Projekte.</h2></div><p>Vier Bereiche für konkrete Einblicke: Ausgangslage, Umsetzung, mein Beitrag und das Ergebnis. Die Projektplätze werden mit meinen Arbeiten gefüllt.</p></div>
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-top"><span>01 / Daten</span><span class="project-mark" aria-hidden="true">BI</span></div>
-            <h3>Power BI</h3>
-            <p>Daten übersichtlich aufbereiten und Zusammenhänge sichtbar machen.</p>
-            <div class="project-foot"><span>Projektbeispiel ergänzen</span><span aria-hidden="true">↗</span></div>
+            <div class="project-preview" aria-hidden="true"><span class="preview-label">Layoutvorschau · keine Projektdaten</span><div class="preview-window"><div class="preview-top"><i></i><i></i><i></i></div><div class="mock-kpis"><i></i><i></i><i></i></div><div class="mock-chart"><i style="--bar:36%"></i><i style="--bar:60%"></i><i style="--bar:48%"></i><i style="--bar:82%"></i><i style="--bar:68%"></i><i style="--bar:95%"></i></div></div></div>
+            <div class="project-body"><div class="project-top"><span>01 / Datenanalyse</span><span class="project-mark" aria-hidden="true">BI</span></div><h3>Power BI</h3><p class="project-description">Platz für ein Dashboard-Projekt: von der Datenaufbereitung bis zu verständlichen Einblicken.</p><ul class="tags" aria-label="Vorgesehene Projektthemen"><li>Datenmodell</li><li>DAX</li><li>Power Query</li></ul>
+              <details class="project-case"><summary>Projektstruktur ansehen</summary><dl class="case-content"><div><dt>Ausgangslage</dt><dd>Datenquelle, Zielgruppe und Fragestellung folgen.</dd></div><div><dt>Mein Beitrag</dt><dd>Datenaufbereitung, Modell und eigene Umsetzung ergänzen.</dd></div><div><dt>Ergebnis</dt><dd>Screenshot, Erkenntnisse und nachweisbaren Nutzen ergänzen.</dd></div></dl></details>
+            </div>
           </article>
           <article class="project-card">
-            <div class="project-top"><span>02 / Apps</span><span class="project-mark" aria-hidden="true">PA</span></div>
-            <h3>Power Apps</h3>
-            <p>Digitale Anwendungen für konkrete Abläufe und Bedürfnisse.</p>
-            <div class="project-foot"><span>Projektbeispiel ergänzen</span><span aria-hidden="true">↗</span></div>
+            <div class="project-preview" aria-hidden="true"><span class="preview-label">Layoutvorschau · keine Projektdaten</span><div class="preview-window"><div class="preview-top"><i></i><i></i><i></i></div><div class="mock-app"><div class="mock-sidebar"></div><div class="mock-form"><i></i><i></i><i></i><i></i></div></div></div></div>
+            <div class="project-body"><div class="project-top"><span>02 / Anwendungen</span><span class="project-mark" aria-hidden="true">PA</span></div><h3>Power Apps</h3><p class="project-description">Platz für eine Anwendung, die einen konkreten Arbeitsablauf unterstützt und vereinfacht.</p><ul class="tags" aria-label="Vorgesehene Projektthemen"><li>Power Fx</li><li>Oberfläche</li><li>Datenanbindung</li></ul>
+              <details class="project-case"><summary>Projektstruktur ansehen</summary><dl class="case-content"><div><dt>Ausgangslage</dt><dd>Prozess, Nutzergruppe und Anforderungen folgen.</dd></div><div><dt>Mein Beitrag</dt><dd>App-Typ, Datenbasis und selbst entwickelte Funktionen ergänzen.</dd></div><div><dt>Ergebnis</dt><dd>App-Ansichten, Demo und Verbesserungen im Ablauf ergänzen.</dd></div></dl></details>
+            </div>
           </article>
           <article class="project-card">
-            <div class="project-top"><span>03 / Flow</span><span class="project-mark" aria-hidden="true">↯</span></div>
-            <h3>Power Automate</h3>
-            <p>Wiederkehrende Schritte verbinden und Prozesse vereinfachen.</p>
-            <div class="project-foot"><span>Projektbeispiel ergänzen</span><span aria-hidden="true">↗</span></div>
+            <div class="project-preview" aria-hidden="true"><span class="preview-label">Layoutvorschau · keine Projektdaten</span><div class="preview-window"><div class="preview-top"><i></i><i></i><i></i></div><div class="mock-flow"><i></i><b></b><i></i><b></b><i></i></div></div></div>
+            <div class="project-body"><div class="project-top"><span>03 / Automatisierung</span><span class="project-mark" aria-hidden="true">↯</span></div><h3>Power Automate</h3><p class="project-description">Platz für einen Flow, der wiederkehrende Schritte verbindet und manuelle Arbeit reduziert.</p><ul class="tags" aria-label="Vorgesehene Projektthemen"><li>Cloud Flows</li><li>Konnektoren</li><li>Fehlerbehandlung</li></ul>
+              <details class="project-case"><summary>Projektstruktur ansehen</summary><dl class="case-content"><div><dt>Ausgangslage</dt><dd>Bisherigen Ablauf und Automatisierungsziel ergänzen.</dd></div><div><dt>Mein Beitrag</dt><dd>Trigger, Logik, Integrationen und Fehlerbehandlung beschreiben.</dd></div><div><dt>Ergebnis</dt><dd>Ablaufdiagramm und belegbare Verbesserung ergänzen.</dd></div></dl></details>
+            </div>
           </article>
           <article class="project-card">
-            <div class="project-top"><span>04 / Web</span><span class="project-mark" aria-hidden="true">P</span></div>
-            <h3>Power Pages</h3>
-            <p>Portale gestalten, die Informationen einfach zugänglich machen.</p>
-            <div class="project-foot"><span>Projektbeispiel ergänzen</span><span aria-hidden="true">↗</span></div>
+            <div class="project-preview" aria-hidden="true"><span class="preview-label">Layoutvorschau · keine Projektdaten</span><div class="preview-window"><div class="preview-top"><i></i><i></i><i></i></div><div class="mock-page"><i></i><i></i><div class="mock-page-grid"><b></b><b></b><b></b></div></div></div></div>
+            <div class="project-body"><div class="project-top"><span>04 / Webportale</span><span class="project-mark" aria-hidden="true">P</span></div><h3>Power Pages</h3><p class="project-description">Platz für ein Portal, das Informationen und Funktionen für seine Zielgruppe zugänglich macht.</p><ul class="tags" aria-label="Vorgesehene Projektthemen"><li>Webdesign</li><li>Dataverse</li><li>Zugriffsrollen</li></ul>
+              <details class="project-case"><summary>Projektstruktur ansehen</summary><dl class="case-content"><div><dt>Ausgangslage</dt><dd>Zielgruppe und Zweck des Portals folgen.</dd></div><div><dt>Mein Beitrag</dt><dd>Gestaltung, Funktionen und Datenzugriff beschreiben.</dd></div><div><dt>Ergebnis</dt><dd>Portalansichten, Demo und erreichten Nutzen ergänzen.</dd></div></dl></details>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Technologien &amp; Themen</p><h2 id="skills-title">Mein<br/>Werkzeugkasten.</h2></div><p>Auswahl für das Portfolio. Mein tatsächlicher Kenntnisstand und passende Projektbelege werden noch ergänzt.</p></div>
+        <div class="skills-grid">
+          <article class="skill-group"><span class="skill-index">01 / ANALYTICS</span><h3>Daten &amp; Analyse</h3><ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query / M</li><li>SQL</li><li>Datenmodellierung</li></ul><p class="skill-state">Kenntnisstand &amp; Projektbelege folgen</p></article>
+          <article class="skill-group"><span class="skill-index">02 / APPLICATIONS</span><h3>Business Apps</h3><ul class="tags"><li>Power Apps</li><li>Canvas Apps</li><li>Model-driven Apps</li><li>Power Fx</li><li>Dataverse</li></ul><p class="skill-state">Kenntnisstand &amp; Projektbelege folgen</p></article>
+          <article class="skill-group"><span class="skill-index">03 / AUTOMATION</span><h3>Abläufe &amp; Flows</h3><ul class="tags"><li>Power Automate</li><li>Cloud Flows</li><li>Ausdrücke</li><li>JSON</li><li>Fehlerbehandlung</li></ul><p class="skill-state">Kenntnisstand &amp; Projektbelege folgen</p></article>
+          <article class="skill-group"><span class="skill-index">04 / WEB</span><h3>Portale &amp; Oberflächen</h3><ul class="tags"><li>Power Pages</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Liquid</li></ul><p class="skill-state">Kenntnisstand &amp; Projektbelege folgen</p></article>
+          <article class="skill-group"><span class="skill-index">05 / INTEGRATION</span><h3>Daten &amp; Verbindungen</h3><ul class="tags"><li>Dataverse</li><li>SharePoint</li><li>REST-APIs</li><li>Teams</li><li>Microsoft Graph</li></ul><p class="skill-state">Kenntnisstand &amp; Projektbelege folgen</p></article>
+          <article class="skill-group"><span class="skill-index">06 / DELIVERY</span><h3>Versionen &amp; Auslieferung</h3><ul class="tags"><li>Git / GitHub</li><li>Solutions</li><li>Power Platform CLI</li><li>Pipelines</li><li>GitHub Actions / Azure DevOps</li></ul><p class="skill-state">Kenntnisstand &amp; Projektbelege folgen</p></article>
+          <article class="skill-group"><span class="skill-index">07 / OPTIONAL</span><h3>Eigene Erweiterungen</h3><ul class="tags"><li>TypeScript</li><li>React / PCF</li><li>C# / .NET</li><li>Azure Functions</li></ul><p class="skill-state">Optionaler Bereich · Auswahl noch offen</p></article>
+          <article class="skill-group"><span class="skill-index">08 / OPTIONAL</span><h3>KI &amp; Assistenten</h3><ul class="tags"><li>Copilot Studio</li><li>AI Builder</li><li>Agenten</li></ul><p class="skill-state">Optionaler Bereich · Auswahl noch offen</p></article>
         </div>
       </div>
     </section>
 
     <section class="section" id="profil" aria-labelledby="profile-title">
       <div class="wrap profile">
-        <div class="profile-copy">
-          <p class="eyebrow">Der Mensch hinter den Projekten</p>
-          <h2 id="profile-title">Erfahrung,<br />die weitergeht.</h2>
-          <p>Hier erzählen wir deinen Weg: welche Stationen dich geprägt haben, welche Erfahrung du mitbringst und woran du als Nächstes arbeiten möchtest.</p>
-          <p class="profile-note">Der Bereich ist gestalterisch vorbereitet. Deine konkreten Stationen und Schwerpunkte ergänzen wir gemeinsam.</p>
-        </div>
-        <div class="timeline" aria-label="Vorgesehene Inhalte für Erfahrung und Profil">
-          <div class="timeline-row"><span class="timeline-index">01</span><div><h3>Werdegang</h3><p>Rollen, Stationen und Zeiträume ergänzen.</p></div></div>
-          <div class="timeline-row"><span class="timeline-index">02</span><div><h3>Erfahrung</h3><p>Aufgaben, Verantwortungsbereiche und Ergebnisse beschreiben.</p></div></div>
-          <div class="timeline-row"><span class="timeline-index">03</span><div><h3>Schwerpunkte</h3><p>Arbeitsweise, Interessen und nächste Ziele sichtbar machen.</p></div></div>
+        <div class="profile-copy"><p class="eyebrow">Der Mensch hinter den Projekten</p><h2 id="profile-title">Mein Weg.<br/>Meine Erfahrung.</h2><p>Hier entsteht der persönliche Teil meines Portfolios: mein beruflicher Weg, meine Arbeitsweise und die Themen, die mich antreiben.</p><p class="profile-note">Persönlicher Profiltext und konkrete Stationen folgen.</p></div>
+        <div class="timeline" aria-label="Vorbereiteter Werdegang">
+          <div class="timeline-row"><span class="timeline-index">01</span><div><span class="timeline-kind">Berufserfahrung</span><h3>Rolle &amp; Unternehmen</h3><p>Zeitraum, Aufgaben, Verantwortung und ausgewählte Ergebnisse werden ergänzt.</p><span class="timeline-empty">Stationen folgen</span></div></div>
+          <div class="timeline-row"><span class="timeline-index">02</span><div><span class="timeline-kind">Ausbildung &amp; Weiterbildung</span><h3>Mein fachlicher Weg</h3><p>Ausbildung, Studium oder relevante Weiterbildungen werden ergänzt.</p><span class="timeline-empty">Angaben folgen</span></div></div>
+          <div class="timeline-row"><span class="timeline-index">03</span><div><span class="timeline-kind">Zertifikate</span><h3>Nachweise &amp; Qualifikationen</h3><p>Vorhandene Zertifikate mit Datum und überprüfbarem Nachweis werden ergänzt.</p><span class="timeline-empty">Nachweise folgen</span></div></div>
         </div>
       </div>
     </section>
 
     <section class="contact" id="kontakt" aria-labelledby="contact-title">
       <div class="wrap contact-inner">
-        <div>
-          <p class="eyebrow">Kontakt</p>
-          <h2 id="contact-title">Ein guter nächster Schritt beginnt mit einem Gespräch.</h2>
-          <p class="contact-copy">Deine gewünschten Kontaktwege, etwa LinkedIn oder E-Mail, ergänzen wir im nächsten Schritt.</p>
+        <div><p class="eyebrow">Kontakt &amp; Unterlagen</p><h2 id="contact-title">Lernen wir<br/>uns kennen.</h2><p class="contact-copy">Kontaktwege und Bewerbungsunterlagen finden hier ihren Platz. GitHub ist bereits verlinkt.</p></div>
+        <div class="contact-links">
+          <a href="https://github.com/justinborowitza" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <span class="contact-slot">E-Mail <small>Kontaktadresse folgt</small></span>
+          <span class="contact-slot">LinkedIn <small>Profil-Link folgt</small></span>
+          <span class="contact-slot">Lebenslauf <small>PDF folgt</small></span>
         </div>
-        <a class="button" href="#profil"><span class="button-dot" aria-hidden="true"></span>Zum Profil</a>
       </div>
     </section>
   </main>
-
-  <footer class="footer wrap">
-    <span class="footer-brand">JB <span class="footer-mark">/</span> PORTFOLIO</span>
-    <span>Power Platform · Daten · digitale Lösungen</span>
-    <a href="#start">Nach oben ↑</a>
-  </footer>
+  <footer class="footer wrap"><span class="footer-brand">JB <span class="footer-mark">/</span> PORTFOLIO</span><span>Daten · Apps · Automatisierung</span><a href="#start">Nach oben ↑</a></footer>
 </body>
+
 </html>
