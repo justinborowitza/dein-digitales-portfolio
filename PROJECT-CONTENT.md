@@ -31,4 +31,8 @@ The five new project covers in `dist/assets/projects/` are generated conceptual 
 
 ## Remaining fields
 
-Personal biography, education, certificates, email, LinkedIn, CV and genuine Power BI/Power Pages project examples remain open. No employers, qualifications, proficiency levels or performance statistics are invented.
+Education supplied by Justin on 2026-10-08: currently in semester 7 of Wirtschaftsinformatik at THA. No degree completion, study start date or qualification title is inferred. The profile text and timeline include this current status.
+
+The toolbox presents six project-grounded capabilities with descriptions and links: Excel reporting, Power Apps, Power Automate archival, SharePoint/document/API integration, Flutter UI and tests, Git/GitHub/Cloudflare collaboration. Unconfirmed candidate technologies are not presented as established skills.
+
+Further personal biography, certificates, email, LinkedIn, CV and genuine Power BI/Power Pages project examples remain open. No employers, qualifications, proficiency levels or performance statistics are invented.

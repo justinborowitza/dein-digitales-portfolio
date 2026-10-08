@@ -6,6 +6,7 @@ Ein statisches Portfolio für Power BI, Power Apps, Power Automate und Power Pag
 
 - `dist/index.html` enthält Seite, Texte und das Grundlayout.
 - `dist/portfolio.css` ergänzt Produktlogos, Technologiegruppen und den animierten Werdegang.
+- Der Werkzeugkasten zeigt sechs offene Kompetenzzeilen mit konkreten Anwendungen, Werkzeugen und Projektlinks. Das Studium an der THA im 7. Semester ist im Profil und Werdegang ergänzt.
 - `dist/portfolio.js` steuert die Fortschrittslinie und aktiven Punkte im Werdegang.
 - `dist/hero-art.png` enthält das vorhandene violett-silberne 3D-Emblem.
 - `dist/favicon.svg` enthält das passende JB-Planetenzeichen.
