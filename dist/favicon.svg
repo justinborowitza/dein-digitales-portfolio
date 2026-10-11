@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <radialGradient id="g" cx="28%" cy="24%" r="78%"><stop stop-color="#a975ff"/><stop offset=".55" stop-color="#392252"/><stop offset="1" stop-color="#0a0710"/></radialGradient>
-  </defs>
-  <circle cx="32" cy="32" r="26" fill="url(#g)" stroke="#c4a0ff" stroke-opacity=".65"/>
-  <ellipse cx="32" cy="32" rx="30" ry="11" fill="none" stroke="#67e8ff" stroke-opacity=".62" transform="rotate(-25 32 32)"/>
-  <text x="32" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="900" letter-spacing="-2" fill="#f7f4ff">JB</text>
+  <defs><radialGradient id="g" cx="28%" cy="22%" r="80%"><stop stop-color="#aa82d4"/><stop offset=".5" stop-color="#39264d"/><stop offset="1" stop-color="#0a0710"/></radialGradient></defs>
+  <circle cx="32" cy="32" r="27" fill="url(#g)" stroke="#c4a0ff" stroke-opacity=".58"/>
+  <circle cx="47" cy="17" r="2.5" fill="#75eaff"/>
+  <text x="31" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="900" letter-spacing="-2" fill="#f7f4ff">JB</text>
 </svg>
