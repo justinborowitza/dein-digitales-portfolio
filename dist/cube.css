@@ -4,6 +4,14 @@
 .hero-title .eyebrow{margin-bottom:26px}
 .hero-title h1{font-size:clamp(52px,5.6vw,78px);letter-spacing:-.06em;line-height:1.07}
 .hero-title>p:not(.eyebrow){font-size:14px;margin-top:25px}
+.hero-title h1{font-family:var(--font-sans);font-weight:500;letter-spacing:-.055em}
+.hero-title h1 span{animation:hero-soft-arrival .95s cubic-bezier(.2,.65,.3,1) both}
+.hero-title h1 span:nth-child(2){animation-delay:.12s}
+.hero-title h1 span:nth-child(3){animation-delay:.24s}
+.hero-title h1 .violet{color:#d6b9ff;text-shadow:0 0 22px #9b5fe54d,0 0 65px #8c43ff28;transition:text-shadow .3s}
+.hero-title h1:hover .violet{text-shadow:0 0 24px #9b5fe580,0 0 72px #8c43ff40}
+.motion-paused .hero-title h1 span{animation-play-state:paused}
+@keyframes hero-soft-arrival{from{opacity:0;transform:translateY(10px);filter:blur(3px)}to{opacity:1;transform:none;filter:blur(0)}}
 .hero-title .actions{margin-top:35px}
 .brand-mark{display:none}
 .brand strong{font-size:24px;font-weight:500;letter-spacing:-.04em}
@@ -23,4 +31,4 @@
 .cube-ready:hover .cube-help,.cube-ready:focus-visible .cube-help{opacity:1}
 @media(max-width:1000px){.hero-grid{gap:18px;min-height:510px}.cube-stage{height:440px}.hero-title h1{font-size:clamp(48px,6.4vw,70px)}}
 @media(max-width:700px){.hero{padding-top:44px}.hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:0}.hero-title{order:0;padding-top:0}.hero-title h1{font-size:clamp(48px,11vw,70px)}.hero-title .eyebrow{margin-bottom:20px}.cube-stage{order:1;height:330px;width:100%;max-width:420px;align-self:center;margin:8px 0 0}.cube-help{bottom:10px;font-size:9px}.cube-shadow{bottom:48px}.hero-meta{flex-wrap:wrap}.hero-meta>span{width:100%}.hero-title .actions{margin-top:25px}}
-@media(prefers-reduced-motion:reduce){.cube-canvas{transition:none}}
+@media(prefers-reduced-motion:reduce){.cube-canvas{transition:none}.hero-title h1 span{animation:none;opacity:1;transform:none;filter:none}}
