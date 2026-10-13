@@ -27,7 +27,7 @@ Branch development and Cloudflare previews are grounded in Justin's prior user m
 
 ## Project visuals
 
-The five new project covers in `dist/assets/projects/` are generated conceptual illustrations. They do not represent real Fendt premises, operational screenshots, actual manufacturing parts, live QR identifiers or the actual Board Magic UI. The covers are retained as design backups and are no longer displayed in the compact project cards. Generation prompts are recorded in `ASSET-SOURCES.md`.
+Project graphics on the overview and case-study pages are schematic HTML/CSS illustrations. They do not represent actual application screens, live company data, QR identifiers or the Board Magic interface.
 
 ## Remaining fields
 
@@ -39,4 +39,4 @@ Further personal biography, certificates, email, LinkedIn, CV and genuine Power 
 
 ## Pforten-App workflow graphic
 
-The featured workflow is a schematic of the project described above: Power Apps check-in/out, SharePoint records and monthly Power Automate archival. It is explicitly labeled as a schematic, not an operational screenshot. It adds no usage figures, performance claims or unconfirmed technical details.
+The Pforten-App case-study graphic is a schematic of check-in/out in Power Apps, SharePoint records and monthly Power Automate archival. It is explicitly identified as schematic, not an operational screenshot.

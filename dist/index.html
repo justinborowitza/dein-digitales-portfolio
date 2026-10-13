@@ -1,178 +1,328 @@
 <!doctype html>
-<html lang="de" class="no-js">
+<html lang='de' class='no-js'>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#08070b" />
-  <meta name="description" content="Justin Borowitza – Wirtschaftsinformatik an der THA. Projekte mit Power Apps, SharePoint und Power Automate sowie Beiträge zum Flutter-Spiel Board Magic." />
-  <meta property="og:title" content="Justin Borowitza — Portfolio" />
-  <meta property="og:description" content="Meine Projekte bei Fendt, Beiträge zu Board Magic und mein Ziel: Power Platform Developer." />
-  <meta property="og:type" content="website" />
-  <title>Justin Borowitza — Portfolio</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="portfolio.css?v=20261013-layout" />
-  <link rel="stylesheet" href="redesign.css?v=20261013-layout" />
-  <script src="portfolio.js?v=20261013-layout" defer></script>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta name='theme-color' content='#08070b'>
+<meta name='description' content='Wirtschaftsinformatik an der THA. Projekte mit Power Apps, SharePoint, Power Automate, Excel und Beiträge zu Board Magic.'>
+<meta property='og:title' content='Justin Borowitza — Portfolio'>
+<meta property='og:description' content='Wirtschaftsinformatik an der THA. Projekte mit Power Apps, SharePoint, Power Automate, Excel und Beiträge zu Board Magic.'>
+<meta property='og:type' content='website'>
+<title>Justin Borowitza — Portfolio</title>
+<link rel='icon' type='image/svg+xml' href='favicon.svg'>
+<link rel='stylesheet' href='site.css'>
+<script src='portfolio.js' defer>
+</script>
 </head>
-<body>
-  <div class="grain" aria-hidden="true"></div>
-  <header class="topbar wrap">
-    <a class="brand" href="#start" aria-label="Justin Borowitza, Seitenanfang">
-      <span class="brand-emblem" aria-hidden="true"><svg viewBox="0 0 250 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span><span class="brand-name">JUSTIN BOROWITZA</span><span class="brand-label">Portfolio · Power Platform</span></span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="portfolio-nav">Menü <span aria-hidden="true">+</span></button>
-    <nav class="topnav" id="portfolio-nav" aria-label="Hauptnavigation">
-      <a href="#projekte">Projekte</a><a href="#skills">Werkzeugkasten</a><a href="#profil">Mein Weg</a>
-      <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero wrap" id="start" aria-labelledby="hero-title">
-      <div class="hero-grid">
-        <div class="hero-profile">
-          <p class="eyebrow">Portfolio / Justin Borowitza</p>
-          <p class="hero-name">Wirtschaft &amp; IT.<br/>Mit Praxis in der<br/>Power Platform.</p>
-          <p class="intro">Ich studiere Wirtschaftsinformatik an der THA. Mein Ziel: Power Platform Developer.</p>
-          <div class="hero-actions"><a class="button" href="#projekte">Projekte ansehen <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#profil">Über mich</a></div>
-        </div>
-        <div class="identity-stage">
-          <div class="identity-glow" aria-hidden="true"></div>
-          <svg class="identity-lines" viewBox="0 0 480 480" fill="none" aria-hidden="true"><path class="identity-path" d="M-40 332C80 332 80 170 240 170S390 332 520 332"/><path class="identity-path second" d="M-40 148C80 148 110 320 240 320S380 148 520 148"/><circle class="identity-point" cx="355" cy="198" r="3"/></svg>
-          <div class="hero-monogram" role="img" aria-label="JB-Monogramm, Justin Borowitza"><svg viewBox="0 0 250 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <span class="identity-caption" aria-hidden="true">JB / JUSTIN BOROWITZA</span>
-        </div>
-        <div class="hero-title-block"><h1 id="hero-title"><span class="title-light">Aus Ideen</span><span class="title-violet">werden</span><span class="title-violet">Lösungen.</span></h1><p class="hero-title-note">Power Apps · Automatisierung · Daten</p></div>
-      </div>
-      <div class="hero-bottom"><span>Studium an der THA · Erfahrung bei Fendt</span><button class="motion-toggle" type="button" aria-pressed="false">Bewegung pausieren <span aria-hidden="true">Ⅱ</span></button><a href="#projekte">Meine Arbeit <span aria-hidden="true">↓</span></a></div>
-    </section>
-    <div class="expertise-strip wrap" aria-label="Werkzeuge aus meinen Projekten"><span>In meinen Projekten</span><span>Power Apps</span><span>SharePoint</span><span>Power Automate</span><span>Excel</span><span>Flutter</span></div>
-
-    <section class="featured-section wrap" aria-labelledby="featured-title">
-      <div class="featured-head"><p class="eyebrow">Ein Projekt im Detail</p><h2 id="featured-title">Eine App für<br/>den Arbeitsalltag.</h2></div>
-      <div class="featured-layout">
-        <figure class="workflow-figure">
-          <div class="workflow-top"><span>Pforten-App</span><span>Schematischer Ablauf</span></div>
-          <div class="workflow-grid">
-            <div class="workflow-step"><span class="step-index">01</span><div><span class="step-tool">Power Apps</span><strong>Anmelden.<br/>Abmelden.</strong><p>Dienstleister ein- und ausbuchen.</p></div><span class="step-arrow" aria-hidden="true">↓</span></div>
-            <div class="workflow-step"><span class="step-index">02</span><div><span class="step-tool">SharePoint</span><strong>Einträge speichern.</strong><p>Die Liste als Datenbasis.</p></div><span class="step-arrow" aria-hidden="true">↓</span></div>
-            <div class="workflow-step"><span class="step-index">03</span><div><span class="step-tool">Power Automate</span><strong>Monatlich archivieren.</strong><p>Alte Einträge verschieben.</p></div></div>
-          </div>
-          <figcaption>Darstellung des Ablaufs, kein Screenshot der Anwendung.</figcaption>
-        </figure>
-        <div class="featured-copy"><p class="eyebrow">Fendt / Pflichtpraktikum</p><h3>Pforten-App.<br/><span>Im Einsatz.</span></h3><p>Ich habe die App eigenständig entwickelt und eingeführt. Sie unterstützt sieben Sprachen und wird auch nach meinem Praktikum weiter genutzt.</p><ul class="feature-facts"><li><span>Anwendung</span>Power Apps</li><li><span>Datenbasis</span>SharePoint</li><li><span>Archivierung</span>Power Automate</li></ul><a class="text-link" href="#fendt-pforten-app">Zum Projekt <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </section>
-
-    <section class="section" id="projekte" aria-labelledby="projects-title">
-      <div class="wrap">
-        <div class="section-head"><div><p class="eyebrow">Praktikum &amp; Teamprojekt</p><h2 id="projects-title">Ausgewählte<br/>Projekte.</h2></div><p>Diese Projekte habe ich bei Fendt umgesetzt. Bei Board Magic zeige ich meine Beiträge zum gemeinsamen Flutter-Spiel.</p></div>
-        <div class="project-grid practice-projects">
-          <article class="project-card" id="fendt-pforten-app" aria-labelledby="fendt-pforten-app-title">
-            <div class="project-body">
-              <p class="project-context">Fendt · Produktiv eingesetzt</p>
-              <h3 id="fendt-pforten-app-title">Pforten-App</h3>
-              <p class="project-description">Mehrsprachiges Ein- und Ausbuchen von Dienstleistern.</p>
-              <p class="project-stack">Power Apps · SharePoint · Power Automate</p>
-              <details class="project-details">
-                <summary>Details<span class="sr-only"> zu Pforten-App</span></summary>
-                <div class="project-detail-copy"><p>Ich habe die App eigenständig entwickelt und eingeführt. Die Oberfläche unterstützt sieben Sprachen. Die App wird auch nach meinem Praktikum weiter genutzt.</p><p>Ein Power-Automate-Flow archiviert monatlich alte SharePoint-Einträge und bereinigt die Hauptliste.</p></div>
-              </details>
-            </div>
-          </article>
-          <article class="project-card" id="fendt-document-poc" aria-labelledby="fendt-document-poc-title">
-            <div class="project-body">
-              <p class="project-context">Fendt · Proof of Concept</p>
-              <h3 id="fendt-document-poc-title">Dokumenten-PoC</h3>
-              <p class="project-description">Dokumente aus Eingaben und strukturierten Textbausteinen erstellen.</p>
-              <p class="project-stack">SharePoint · HTML-to-DOC · Fullstack</p>
-              <details class="project-details">
-                <summary>Details<span class="sr-only"> zu Dokumentenerzeugung</span></summary>
-                <div class="project-detail-copy"><p>Ich habe den Proof of Concept geplant und vollständig entwickelt. Er verbindet Eingabemasken mit hierarchisch aufgebauten Textbausteinen.</p><p>Die Daten liegen in SharePoint. Eine HTML-to-DOC-Schnittstelle erstellt die Dokumente.</p></div>
-              </details>
-            </div>
-          </article>
-          <article class="project-card" id="fendt-reporting" aria-labelledby="fendt-reporting-title">
-            <div class="project-body">
-              <p class="project-context">Fendt · Reporting</p>
-              <h3 id="fendt-reporting-title">KPI-Reporting</h3>
-              <p class="project-description">Monatliche Kennzahlen aus SAP-Exporten in Excel auswerten.</p>
-              <p class="project-stack">Excel · Pivot-Analysen · SAP-Exporte</p>
-              <details class="project-details">
-                <summary>Details<span class="sr-only"> zu KPI-Reporting</span></summary>
-                <div class="project-detail-copy"><p>Ich habe SAP-Exporte in Excel aufbereitet und Pivot-Analysen erstellt. Damit wurden monatliche Kennzahlen ausgewertet und für das Reporting aufbereitet.</p></div>
-              </details>
-            </div>
-          </article>
-          <article class="project-card" id="fendt-qr-prototype" aria-labelledby="fendt-qr-prototype-title">
-            <div class="project-body">
-              <p class="project-context">Fendt · Prototyp</p>
-              <h3 id="fendt-qr-prototype-title">QR-Code-Tracking</h3>
-              <p class="project-description">QR-Codes für die Nachverfolgung von Fehlerteilen erzeugen.</p>
-              <p class="project-stack">API-Anbindung · QR-Codes</p>
-              <details class="project-details">
-                <summary>Details<span class="sr-only"> zu QR-Code-Tracking</span></summary>
-                <div class="project-detail-copy"><p>Ich habe einen Prototyp umgesetzt, der QR-Codes über eine API erzeugt. Die Codes sollen helfen, Fehlerteile nachzuverfolgen.</p></div>
-              </details>
-            </div>
-          </article>
-          <article class="project-card" id="board-magic" aria-labelledby="board-magic-title">
-            <div class="project-body">
-              <p class="project-context">Teamprojekt · Geschlossene Web-Beta</p>
-              <h3 id="board-magic-title">Board Magic</h3>
-              <p class="project-description">Oberflächen und Tests für ein gemeinsames Flutter-Spiel.</p>
-              <p class="project-stack">Flutter · Dart · GitHub</p>
-              <details class="project-details">
-                <summary>Details<span class="sr-only"> zu Board Magic</span></summary>
-                <div class="project-detail-copy"><p>Meine Beiträge: Profil- und Datenschutzdialoge, Belohnungsanzeige, Shop-Layout und Tests für die Zugreihenfolge.</p><p>Wir entwickeln ein Ludo-Spiel mit Computergegnern, Speichern und Fortsetzen sowie privaten Online-Räumen.</p><nav class="project-evidence" aria-label="Meine Beiträge zu Board Magic"><a href="https://github.com/leonwwest/ludo_club/pull/683" target="_blank" rel="noopener noreferrer">Profil</a><a href="https://github.com/leonwwest/ludo_club/pull/700" target="_blank" rel="noopener noreferrer">Belohnungen</a><a href="https://github.com/leonwwest/ludo_club/pull/783" target="_blank" rel="noopener noreferrer">Shop</a><a href="https://github.com/leonwwest/ludo_club/pull/782" target="_blank" rel="noopener noreferrer">Tests</a></nav></div>
-              </details>
-            </div>
-          </article>
-        </div>
-        <section class="platform-strip" aria-labelledby="platform-title"><div class="platform-copy"><p class="eyebrow">Microsoft Power Platform</p><h3 id="platform-title">Werkzeuge für<br/>digitale Prozesse.</h3><p>Bei Fendt habe ich Power Apps, Power Automate und SharePoint eingesetzt. Für Power BI und Power Pages habe ich hier noch keine eigenen Projektbeispiele.</p><a class="timeline-project-link" href="#fendt-pforten-app">Pforten-App &amp; Archivierung ansehen <span aria-hidden="true">↗</span></a></div><div class="platform-products"><div class="platform-product"><img src="assets/power-bi.svg" width="48" height="48" alt="" loading="lazy"/><span>Power BI</span><small>Noch kein Projektbeispiel</small></div><div class="platform-product is-featured"><img src="assets/power-apps.svg" width="48" height="48" alt="" loading="lazy"/><span>Power Apps</span><small>Fendt · Pforten-App</small></div><div class="platform-product is-featured"><img src="assets/power-automate.svg" width="48" height="48" alt="" loading="lazy"/><span>Power Automate</span><small>Monatliche Archivierung</small></div><div class="platform-product"><img src="assets/power-pages.svg" width="48" height="48" alt="" loading="lazy"/><span>Power Pages</span><small>Noch kein Projektbeispiel</small></div></div></section>
-      </div>
-    </section>
-
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="wrap skills-layout">
-        <div class="section-head skills-intro"><div><p class="eyebrow">Was ich damit umsetze</p><h2 id="skills-title">Mein<br/>Werkzeugkasten.</h2></div><p>Mit diesen Werkzeugen habe ich in den gezeigten Projekten gearbeitet.</p></div>
-        <div class="toolbox">
-          <div class="tool-track" role="progressbar" aria-label="Lesefortschritt durch meinen Werkzeugkasten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="tool-fill"></span></div>
-          <article class="tool-row"><span class="tool-number" aria-hidden="true">01</span><div class="tool-main"><h3>Daten auswerten.</h3><p>SAP-Exporte in Excel aufbereiten und monatliche Kennzahlen mit Pivot-Analysen auswerten.</p></div><div class="tool-meta"><div class="tool-signature"><span class="tool-wordmark" aria-hidden="true">XLS</span><span>Excel · SAP-Exporte<br/>Pivot-Analysen</span></div><a href="#fendt-reporting">Reporting bei Fendt</a></div></article>
-          <article class="tool-row"><span class="tool-number" aria-hidden="true">02</span><div class="tool-main"><h3>Anwendungen entwickeln.</h3><p>Apps mit Power Apps entwickeln und Daten in SharePoint speichern.</p></div><div class="tool-meta"><div class="tool-signature"><img src="assets/power-apps.svg" width="40" height="40" alt="" loading="lazy" /><span>Power Apps<br/>SharePoint</span></div><a href="#fendt-pforten-app">Pforten-App ansehen</a></div></article>
-          <article class="tool-row"><span class="tool-number" aria-hidden="true">03</span><div class="tool-main"><h3>Routine automatisieren.</h3><p>Mit Power Automate alte SharePoint-Einträge monatlich archivieren und die Hauptliste bereinigen.</p></div><div class="tool-meta"><div class="tool-signature"><img src="assets/power-automate.svg" width="40" height="40" alt="" loading="lazy" /><span>Power Automate<br/>SharePoint-Listen</span></div><a href="#fendt-pforten-app">Monatliche Archivierung</a></div></article>
-          <article class="tool-row"><span class="tool-number" aria-hidden="true">04</span><div class="tool-main"><h3>Systeme verbinden.</h3><p>Dokumente aus Eingaben und Textbausteinen erstellen. APIs zur QR-Code-Erzeugung anbinden.</p></div><div class="tool-meta"><div class="tool-signature"><span class="tool-wordmark" aria-hidden="true">API</span><span>SharePoint · HTML-to-DOC<br/>API-Anbindung</span></div><div class="tool-links"><a href="#fendt-document-poc">Dokumenten-PoC</a><a href="#fendt-qr-prototype">QR-Code-Prototyp</a></div></div></article>
-          <article class="tool-row"><span class="tool-number" aria-hidden="true">05</span><div class="tool-main"><h3>Oberflächen &amp; Tests.</h3><p>Flutter-Oberflächen und Dialoge bearbeiten. Änderungen und die Zugreihenfolge mit Tests prüfen.</p></div><div class="tool-meta"><div class="tool-signature"><span class="tool-wordmark" aria-hidden="true">{ }</span><span>Flutter · Dart<br/>Widget- &amp; Regressionstests</span></div><a href="#board-magic">Meine Board-Magic-Beiträge</a></div></article>
-          <article class="tool-row"><span class="tool-number" aria-hidden="true">06</span><div class="tool-main"><h3>Gemeinsam weiterentwickeln.</h3><p>Auf eigenen Git-Branches arbeiten, Änderungen über GitHub teilen und in Cloudflare-Vorschauen prüfen.</p></div><div class="tool-meta"><div class="tool-signature"><span class="tool-wordmark" aria-hidden="true">GIT</span><span>Git · GitHub<br/>Cloudflare</span></div><a href="#board-magic">Zum gemeinsamen Spieleprojekt</a></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="profil" aria-labelledby="profile-title">
-      <div class="wrap profile-overview">
-        <div class="profile-heading"><p class="eyebrow">Über mich</p><h2 id="profile-title">Mein Weg.<br/>Meine Erfahrung.</h2><p>Ich studiere Wirtschaftsinformatik an der THA. Mein Pflichtpraktikum habe ich bei Fendt in der System- und Technologieplanung gemacht. Mein berufliches Ziel ist Power Platform Development.</p></div>
-        <div class="profile-grid">
-          <article class="profile-panel profile-study"><div class="profile-panel-top"><span>01 / Studium</span><span class="profile-status">Aktuell</span></div><h3>Wirtschaftsinformatik</h3><p class="profile-organization">Technische Hochschule Augsburg</p><div class="study-semester"><strong>7.</strong><span>Semester<br/><small>Laufendes Studium</small></span></div><p>Im Studium beschäftige ich mich mit Wirtschaft und IT.</p></article>
-          <article class="profile-panel profile-practice"><div class="profile-panel-top"><span>02 / Praxiserfahrung</span><span class="profile-status">Pflichtpraktikum</span></div><h3>Fendt</h3><p class="profile-organization">PKPS – System- und Technologieplanung</p><p class="profile-period">Praktikum bis 31.03.2026</p><ul class="profile-highlights"><li>Datenanalyse und Reporting mit Excel und SAP-Exporten</li><li>Eigenständige Entwicklung einer weiterhin produktiv genutzten Pforten-App</li><li>Prototypen für Dokumenterzeugung und QR-Code-Nachverfolgung</li></ul><a class="profile-link" href="#fendt-reporting">Ausgewählte Fendt-Projekte ansehen <span aria-hidden="true">↗</span></a></article>
-        </div>
-        <div class="profile-personal"><span class="profile-personal-label">Neben dem Studium</span><div><h3>Gemeinsam an Board Magic arbeiten.</h3><p>Neben dem Studium arbeite ich im Team an Board Magic. Meine Beiträge zu Oberflächen und Tests sind bei den Projekten verlinkt.</p><a class="profile-link" href="#board-magic">Zum Spieleprojekt und meinen Beiträgen</a></div></div>
-      </div>
-    </section>
-
-    <section class="contact" id="kontakt" aria-labelledby="contact-title">
-      <div class="wrap contact-inner">
-        <div><p class="eyebrow">Kontakt &amp; Austausch</p><h2 id="contact-title">Lernen wir<br/>uns kennen.</h2><p class="contact-copy">Du möchtest mehr über meine Projekte erfahren? Auf GitHub findest du meinen Code und meine Beiträge zu Board Magic.</p></div>
-        <div class="contact-links">
-          <a href="https://github.com/justinborowitza" target="_blank" rel="noopener noreferrer"><span><small>MEIN PROFIL</small>GitHub</span><span aria-hidden="true">↗</span></a>
-          <a href="#projekte"><span><small>MEINE PROJEKTE</small>Projekte entdecken</span><span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer wrap"><span class="footer-brand"><span class="footer-emblem"><svg viewBox="0 0 250 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg></span> JUSTIN BOROWITZA</span><span>Wirtschaftsinformatik · THA</span><a href="#start">Zurück zum Anfang <span aria-hidden="true">↑</span></a></footer>
+<body id='top'>
+<header class='topbar wrap'>
+<a class='brand' href='index.html#start' aria-label='Justin Borowitza, Startseite'>
+<span class='brand-mark'>
+<svg viewBox='0 0 250 240' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'>
+<path d='M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120' stroke='currentColor' stroke-width='14' stroke-linecap='round' stroke-linejoin='round'/>
+</svg>
+</span>
+<span>
+<strong>JUSTIN BOROWITZA</strong>
+<small>Portfolio · Power Platform</small>
+</span>
+</a>
+<button class='menu-toggle' type='button' aria-expanded='false' aria-controls='portfolio-nav'>Menü <span aria-hidden='true'>＋</span>
+</button>
+<nav class='topnav' id='portfolio-nav' aria-label='Hauptnavigation'>
+<a href='index.html#projekte'>Projekte</a>
+<a href='index.html#werkzeugkasten'>Werkzeugkasten</a>
+<a href='index.html#profil'>Mein Weg</a>
+<a href='index.html#kontakt' class=contact-link>Kontakt <span aria-hidden=true>↗</span>
+</a>
+</nav>
+</header>
+<main>
+<section class='hero wrap' id='start' aria-labelledby='hero-title'>
+<div class='hero-grid'>
+<div class='hero-copy'>
+<p class='eyebrow'>Wirtschaftsinformatik · THA</p>
+<h2>Mein Ziel: Power Platform Developer.</h2>
+<p>Im Praktikum bei Fendt habe ich Apps entwickelt, Abläufe automatisiert und Daten in Excel ausgewertet.</p>
+<div class='actions'>
+<a class='button' href='#projekte'>Projekte ansehen <span aria-hidden='true'>↗</span>
+</a>
+<a class='text-action' href='#profil'>Mein Weg</a>
+</div>
+</div>
+<div class='identity-stage'>
+<svg class='identity-lines' viewBox='0 0 480 360' fill='none' aria-hidden='true'>
+<path d='M-30 260C90 260 100 100 240 100S390 260 510 260'/>
+<path d='M-20 100C90 100 120 270 240 270S380 100 500 100'/>
+</svg>
+<div class='identity-mark' role='img' aria-label='JB-Monogramm'>
+<svg viewBox='0 0 250 240' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'>
+<path d='M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120' stroke='currentColor' stroke-width='14' stroke-linecap='round' stroke-linejoin='round'/>
+</svg>
+</div>
+<span class='identity-caption'>JB / JUSTIN BOROWITZA</span>
+</div>
+<div class='hero-title'>
+<h1 id='hero-title'>
+<span>Aus Ideen</span>
+<span class='violet'>werden</span>
+<span class='violet'>Lösungen.</span>
+</h1>
+<p>Power Apps · Automatisierung · Daten</p>
+</div>
+</div>
+<div class='hero-meta'>
+<span>THA · 7. Semester &nbsp;·&nbsp; Fendt-Praktikum bis 31.03.2026</span>
+<button class='motion-toggle' type='button' aria-pressed='false'>Linien pausieren <span aria-hidden='true'>Ⅱ</span>
+</button>
+<a href='#projekte'>Projekte entdecken ↓</a>
+</div>
+</section>
+<div class='tools-strip wrap' aria-label='Werkzeuge aus meinen Projekten'>
+<span>In meinen Projekten genutzt</span>
+<span>Power Apps</span>
+<span>SharePoint</span>
+<span>Power Automate</span>
+<span>Excel</span>
+<span>Flutter</span>
+</div>
+<section class='section' id='projekte' aria-labelledby='projects-heading'>
+<div class='wrap'>
+<div class='section-heading'>
+<div>
+<p class='eyebrow'>Fendt · Teamprojekt</p>
+<h2 id='projects-heading'>Projekte aus<br>der Praxis.</h2>
+</div>
+<p>Einblicke in meine Arbeit mit der Power Platform, Daten und Flutter. Jede Karte führt zur kurzen Fallstudie mit meinem Anteil und dem belegten Ergebnis.</p>
+</div>
+<div class='project-grid'>
+<a class='project-card' href='projects/pforten-app.html' aria-label='Fallstudie: Pforten-App'>
+<div class='project-art' aria-hidden='true'>
+<span class='flow-node'>Anmeldung</span>
+<i>
+</i>
+<span class='flow-node accent'>SharePoint</span>
+<i>
+</i>
+<span class='flow-node'>Archiv</span>
+</div>
+<div class='project-content'>
+<p class='project-tag'>Power Platform · im Einsatz</p>
+<h3>Pforten-App</h3>
+<p class='project-summary'>Dienstleister an- und abmelden, in sieben Sprachen.</p>
+<div class='stack' aria-label='Werkzeuge'>
+<span>Power Apps</span>
+<span>SharePoint</span>
+<span>Power Automate</span>
+</div>
+<span class='project-open'>
+<span>Fallstudie ansehen</span>
+<span aria-hidden='true'>↗</span>
+</span>
+</div>
+</a>
+<a class='project-card' href='projects/dokumenten-poc.html' aria-label='Fallstudie: Dokumenten-PoC'>
+<div class='project-art' aria-hidden='true'>
+<span class='doc-page'>Eingabe<br>
+<b>＋</b>
+<br>Textbausteine</span>
+<i>
+</i>
+<span class='doc-page accent'>Dokument<br>DOC</span>
+</div>
+<div class='project-content'>
+<p class='project-tag'>Fendt · Proof of Concept</p>
+<h3>Dokumenten-PoC</h3>
+<p class='project-summary'>Aus Eingaben und Textbausteinen Dokumente erzeugen.</p>
+<div class='stack' aria-label='Werkzeuge'>
+<span>SharePoint</span>
+<span>HTML-to-DOC</span>
+<span>Fullstack</span>
+</div>
+<span class='project-open'>
+<span>Fallstudie ansehen</span>
+<span aria-hidden='true'>↗</span>
+</span>
+</div>
+</a>
+<a class='project-card' href='projects/kpi-reporting.html' aria-label='Fallstudie: KPI-Reporting'>
+<div class='project-art' aria-hidden='true'>
+<span class='report-bars'>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+</span>
+<span class='report-label'>MONAT · KENNZAHLEN</span>
+</div>
+<div class='project-content'>
+<p class='project-tag'>Fendt · Datenanalyse</p>
+<h3>KPI-Reporting</h3>
+<p class='project-summary'>Monatliche Kennzahlen aus SAP-Exporten auswerten.</p>
+<div class='stack' aria-label='Werkzeuge'>
+<span>Excel</span>
+<span>Pivot-Analysen</span>
+<span>SAP-Exporte</span>
+</div>
+<span class='project-open'>
+<span>Fallstudie ansehen</span>
+<span aria-hidden='true'>↗</span>
+</span>
+</div>
+</a>
+<a class='project-card' href='projects/qr-code-prototyp.html' aria-label='Fallstudie: QR-Code-Prototyp'>
+<div class='project-art' aria-hidden='true'>
+<span class='qr-symbol' aria-hidden='true'>▦</span>
+<i>
+</i>
+<span class='qr-target'>Fehlerteil<br>nachverfolgen</span>
+</div>
+<div class='project-content'>
+<p class='project-tag'>Fendt · Prototyp</p>
+<h3>QR-Code-Prototyp</h3>
+<p class='project-summary'>QR-Codes über eine API für Fehlerteile erzeugen.</p>
+<div class='stack' aria-label='Werkzeuge'>
+<span>API-Anbindung</span>
+<span>QR-Codes</span>
+<span>Prototyp</span>
+</div>
+<span class='project-open'>
+<span>Fallstudie ansehen</span>
+<span aria-hidden='true'>↗</span>
+</span>
+</div>
+</a>
+<a class='project-card' href='projects/board-magic.html' aria-label='Fallstudie: Board Magic'>
+<div class='project-art' aria-hidden='true'>
+<div class='board-art' aria-hidden='true'>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<b>JB</b>
+</div>
+<span class='board-label'>GEMEINSAMES SPIELEPROJEKT</span>
+</div>
+<div class='project-content'>
+<p class='project-tag'>Teamprojekt · Flutter</p>
+<h3>Board Magic</h3>
+<p class='project-summary'>Oberflächen und Tests für ein gemeinsames Ludo-Spiel.</p>
+<div class='stack' aria-label='Werkzeuge'>
+<span>Flutter</span>
+<span>Dart</span>
+<span>GitHub</span>
+</div>
+<span class='project-open'>
+<span>Fallstudie ansehen</span>
+<span aria-hidden='true'>↗</span>
+</span>
+</div>
+</a>
+</div>
+<p class='section-note'>Grafiken sind schematisch und zeigen keine echten Anwendungen oder Unternehmensdaten.</p>
+</div>
+</section>
+<section class='section' id='werkzeugkasten' aria-labelledby='skills-heading'>
+<div class='wrap'>
+<div class='section-heading'>
+<div>
+<p class='eyebrow'>In Projekten verwendet</p>
+<h2 id='skills-heading'>Mein Werkzeugkasten.</h2>
+</div>
+<p>Werkzeuge stehen hier zusammen mit dem Projekt, in dem ich sie eingesetzt habe.</p>
+</div>
+<div class='skills-grid'>
+<article class='skill-block'>
+<small>Power Platform</small>
+<h3>Apps &amp; Automatisierung</h3>
+<p>Power Apps, SharePoint und Power Automate für eine mehrsprachige Pforten-App und deren Archivierung.</p>
+<a href='projects/pforten-app.html'>Pforten-App ansehen ↗</a>
+</article>
+<article class='skill-block'>
+<small>Daten &amp; Dokumente</small>
+<h3>Excel &amp; Schnittstellen</h3>
+<p>SAP-Exporte mit Pivot-Analysen auswerten und einen Proof of Concept zur Dokumenterzeugung entwickeln.</p>
+<a href='projects/kpi-reporting.html'>Reporting ansehen ↗</a>
+</article>
+<article class='skill-block'>
+<small>App-Entwicklung</small>
+<h3>Flutter &amp; Zusammenarbeit</h3>
+<p>Oberflächen und Tests für ein gemeinsames Flutter-Projekt. Meine Beiträge sind über GitHub-PRs nachvollziehbar.</p>
+<a href='projects/board-magic.html'>Board Magic ansehen ↗</a>
+</article>
+</div>
+</div>
+</section>
+<section class='section' id='profil' aria-labelledby='profile-heading'>
+<div class='wrap'>
+<div class='section-heading'>
+<div>
+<p class='eyebrow'>Über mich</p>
+<h2 id='profile-heading'>Studium &amp; Praxis.</h2>
+</div>
+<p>Wirtschaftsinformatik an der Technischen Hochschule Augsburg und praktische Erfahrung in der System- und Technologieplanung.</p>
+</div>
+<div class='profile-grid'>
+<article class='profile-panel'>
+<header>
+<span>01 / Studium</span>
+<span class='status'>Aktuell</span>
+</header>
+<h3>Wirtschaftsinformatik</h3>
+<p>Technische Hochschule Augsburg</p>
+<div class='semester'>
+<strong>7.</strong>
+<span>Semester<br>Laufendes Studium</span>
+</div>
+</article>
+<article class='profile-panel'>
+<header>
+<span>02 / Praxiserfahrung</span>
+<span>Pflichtpraktikum</span>
+</header>
+<h3>Fendt</h3>
+<p>PKPS · System- und Technologieplanung<br>Praktikum bis 31.03.2026</p>
+<p>Hier habe ich Daten ausgewertet, Anwendungen entwickelt und Prototypen umgesetzt.</p>
+<a class='text-action' href='projects/pforten-app.html'>Ausgewählte Arbeit ansehen ↗</a>
+</article>
+</div>
+</div>
+</section>
+<section class='contact-section' id='kontakt' aria-labelledby='contact-heading'>
+<div class='wrap contact-inner'>
+<div>
+<p class='eyebrow'>Kontakt &amp; Austausch</p>
+<h2 id='contact-heading'>Lernen wir uns kennen.</h2>
+<p>Du möchtest mehr über meine Arbeit erfahren? Meine Codebeiträge und Projekte findest du auch auf GitHub.</p>
+</div>
+<div class='contact-links'>
+<a href='https://github.com/justinborowitza' target='_blank' rel='noopener noreferrer'>GitHub-Profil <span aria-hidden='true'>↗</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer class='footer wrap'>
+<span class='brand'>
+<span class='brand-mark'>
+<svg viewBox='0 0 250 240' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'>
+<path d='M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120' stroke='currentColor' stroke-width='14' stroke-linecap='round' stroke-linejoin='round'/>
+</svg>
+</span>
+<strong>JUSTIN BOROWITZA</strong>
+</span>
+<span>Wirtschaftsinformatik · THA</span>
+<a href='#top'>Nach oben ↑</a>
+</footer>
 </body>
-
 </html>
