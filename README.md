@@ -16,6 +16,8 @@ Statisches Bewerbungsportfolio mit Schwerpunkt Power Platform Development.
 
 Cloudflare Workers veröffentlicht mit `npx wrangler deploy` den vorhandenen Ordner `dist`; ein Build-Schritt ist nicht nötig. `wrangler.jsonc` verwendet den bestehenden Worker `uniqbit-consulting-simulation`, damit dessen Dev-Adresse das Portfolio ausliefert.
 
+Worker-Adresse: https://uniqbit-consulting-simulation.justin-maretic.workers.dev/
+
 Für Cloudflare Pages: GitHub-Repository `justinborowitza/dein-digitales-portfolio`, Produktionsbranch `main`, Framework `None`, kein Build-Befehl, Ausgabeverzeichnis `dist` und Root-Verzeichnis `/`. Pushes auf `main` veröffentlichen die Website automatisch.
 
 ## Inhalte
