@@ -27,7 +27,7 @@ Branch development and Cloudflare previews are grounded in Justin's prior user m
 
 ## Project visuals
 
-The five new project covers in `dist/assets/projects/` are generated conceptual illustrations. They do not represent real Fendt premises, operational screenshots, actual manufacturing parts, live QR identifiers or the actual Board Magic UI. Each displayed cover is labeled “Illustration”. Generation prompts are recorded in `ASSET-SOURCES.md`.
+The five new project covers in `dist/assets/projects/` are generated conceptual illustrations. They do not represent real Fendt premises, operational screenshots, actual manufacturing parts, live QR identifiers or the actual Board Magic UI. The covers are retained as design backups and are no longer displayed in the compact project cards. Generation prompts are recorded in `ASSET-SOURCES.md`.
 
 ## Remaining fields
 
@@ -36,3 +36,7 @@ Education supplied by Justin on 2026-10-08: currently in semester 7 of Wirtschaf
 The toolbox presents six project-grounded capabilities with descriptions and links: Excel reporting, Power Apps, Power Automate archival, SharePoint/document/API integration, Flutter UI and tests, Git/GitHub/Cloudflare collaboration. Its animated line and dots display reading progress through the six topics, not skill ratings. Unconfirmed candidate technologies are not presented as established skills.
 
 Further personal biography, certificates, email, LinkedIn, CV and genuine Power BI/Power Pages project examples remain open. No employers, qualifications, proficiency levels or performance statistics are invented.
+
+## Pforten-App workflow graphic
+
+The featured workflow is a schematic of the project described above: Power Apps check-in/out, SharePoint records and monthly Power Automate archival. It is explicitly labeled as a schematic, not an operational screenshot. It adds no usage figures, performance claims or unconfirmed technical details.

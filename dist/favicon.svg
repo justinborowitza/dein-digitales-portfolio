@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><radialGradient id="g" cx="28%" cy="22%" r="80%"><stop stop-color="#aa82d4"/><stop offset=".5" stop-color="#39264d"/><stop offset="1" stop-color="#0a0710"/></radialGradient></defs>
-  <circle cx="32" cy="32" r="27" fill="url(#g)" stroke="#c4a0ff" stroke-opacity=".58"/>
-  <circle cx="47" cy="17" r="2.5" fill="#75eaff"/>
-  <text x="31" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="900" letter-spacing="-2" fill="#f7f4ff">JB</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 240"><rect width="250" height="240" rx="38" fill="#08070b"/><path d="M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120" stroke="#ad72ff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
