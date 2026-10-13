@@ -12,6 +12,7 @@ function getToolboxProgress(offsets, position) {
 }
 
 if (typeof document !== 'undefined') {
+  document.documentElement.classList.remove('no-js');
   (() => {
     const toolbox = document.querySelector('.toolbox');
     if (!toolbox) return;
@@ -66,4 +67,36 @@ if (typeof document !== 'undefined') {
     }
     measure();
   })();
+}
+
+// Small-screen navigation and optional decorative motion.
+if (typeof document !== 'undefined') {
+  const menuButton = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('.topnav');
+  function closeMenu() {
+    navigation.classList.remove('is-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  }
+  if (menuButton && navigation) {
+    menuButton.addEventListener('click', () => {
+      const open = navigation.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    navigation.addEventListener('click', event => {
+      if (event.target.closest('a')) closeMenu();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && navigation.classList.contains('is-open')) {
+        closeMenu();
+        menuButton.focus();
+      }
+    });
+    window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
+  }
+  const motionButton = document.querySelector('.motion-toggle');
+  if (motionButton) motionButton.addEventListener('click', () => {
+    const paused = document.body.classList.toggle('motion-paused');
+    motionButton.setAttribute('aria-pressed', String(paused));
+    motionButton.innerHTML = paused ? 'Bewegung fortsetzen <span aria-hidden="true">▷</span>' : 'Bewegung pausieren <span aria-hidden="true">Ⅱ</span>';
+  });
 }
