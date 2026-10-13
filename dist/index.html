@@ -11,6 +11,8 @@
 <title>Justin Borowitza — Portfolio</title>
 <link rel='icon' type='image/svg+xml' href='favicon.svg'>
 <link rel='stylesheet' href='site.css'>
+<link rel='stylesheet' href='cube.css'>
+<script type='module' src='cube.js'></script>
 <script src='portfolio.js' defer>
 </script>
 </head>
@@ -23,7 +25,7 @@
 </svg>
 </span>
 <span>
-<strong>JUSTIN BOROWITZA</strong>
+<strong>JB</strong>
 <small>Portfolio · Power Platform</small>
 </span>
 </a>
@@ -40,40 +42,26 @@
 <main>
 <section class='hero wrap' id='start' aria-labelledby='hero-title'>
 <div class='hero-grid'>
-<div class='hero-copy'>
+<div class='hero-title'>
 <p class='eyebrow'>Wirtschaftsinformatik · THA</p>
-<h2>Mein Ziel: Power Platform Developer.</h2>
-<p>Im Praktikum bei Fendt habe ich Apps entwickelt, Abläufe automatisiert und Daten in Excel ausgewertet.</p>
+<h1 id='hero-title'><span>Aus Ideen</span><span class='violet'>werden</span><span class='violet'>Lösungen.</span></h1>
+<p>Power Apps · Automatisierung · Daten</p>
 <div class='actions'>
 <a class='button' href='#projekte'>Projekte ansehen <span aria-hidden='true'>↗</span>
 </a>
 <a class='text-action' href='#profil'>Mein Weg</a>
 </div>
 </div>
-<div class='identity-stage'>
-<svg class='identity-lines' viewBox='0 0 480 360' fill='none' aria-hidden='true'>
-<path d='M-30 260C90 260 100 100 240 100S390 260 510 260'/>
-<path d='M-20 100C90 100 120 270 240 270S380 100 500 100'/>
-</svg>
-<div class='identity-mark' role='img' aria-label='JB-Monogramm'>
-<svg viewBox='0 0 250 240' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'>
-<path d='M120 42V150C120 180 106 198 80 198C54 198 38 182 38 158M120 42H156C188 42 208 57 208 82C208 107 188 120 158 120H120M120 120H160C195 120 215 136 215 160C215 184 194 198 160 198H120V120' stroke='currentColor' stroke-width='14' stroke-linecap='round' stroke-linejoin='round'/>
-</svg>
-</div>
-<span class='identity-caption'>JB / JUSTIN BOROWITZA</span>
-</div>
-<div class='hero-title'>
-<h1 id='hero-title'>
-<span>Aus Ideen</span>
-<span class='violet'>werden</span>
-<span class='violet'>Lösungen.</span>
-</h1>
-<p>Power Apps · Automatisierung · Daten</p>
+<div class='cube-stage' tabindex='0' role='group' aria-label='Interaktiver 3D-Würfel' aria-describedby='cube-help'>
+<img class='cube-fallback' src='assets/hero-cube.png' alt='Dunkler schwebender Würfel mit violettem Licht' width='1254' height='1254'>
+<canvas class='cube-canvas' aria-hidden='true'></canvas>
+<span class='cube-shadow' aria-hidden='true'></span>
+<span id='cube-help' class='cube-help'>Ziehen zum Drehen · Pfeiltasten · Esc zum Zurücksetzen</span>
 </div>
 </div>
 <div class='hero-meta'>
 <span>THA · 7. Semester &nbsp;·&nbsp; Fendt-Praktikum bis 31.03.2026</span>
-<button class='motion-toggle' type='button' aria-pressed='false'>Linien pausieren <span aria-hidden='true'>Ⅱ</span>
+<button class='motion-toggle' type='button' aria-pressed='false'>Bewegung pausieren <span aria-hidden='true'>Ⅱ</span>
 </button>
 <a href='#projekte'>Projekte entdecken ↓</a>
 </div>
