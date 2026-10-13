@@ -1,6 +1,6 @@
 document.documentElement.classList.remove('no-js');
 const descriptions = {
-  1: 'DM Sans · weiches Lavendellicht · ruhiges Einblenden.',
+  1: 'Geist Sans · weiches Lavendellicht · ruhiges Einblenden.',
   2: 'Manrope · silbriger Lichtreflex · einmaliger Lichtdurchlauf.',
   3: 'Space Grotesk · feine Lichtkante · versetzter Aufbau der Zeilen.',
 };
