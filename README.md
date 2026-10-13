@@ -16,8 +16,14 @@ Die Seite enthält vier vom Nutzer beschriebene Fendt-Projekte und das gemeinsam
 
 ## Bedienung
 
-Im Werkzeugkasten füllt sich die vertikale Linie zwischen den sechs Schwerpunkten beim Scrollen. Der aktuelle Punkt leuchtet cyan, passierte Punkte werden violett ausgefüllt. Beim Zurückscrollen nimmt die Füllung wieder ab. Die Linie verbindet die tatsächlichen Mittelpunkte der Marker auch nach Größenänderungen; sie zeigt Lesefortschritt, keinen Kenntnisstand. Das Profil enthält einen persönlichen Einstieg, zwei Blöcke für das laufende THA-Studium im 7. Semester und das Fendt-Pflichtpraktikum sowie einen separaten Abschnitt zum gemeinsamen Board-Magic-Projekt. Zertifikate werden mit konkreten Nachweisen ergänzt. Die fünf Praxisprojekte zeigen jeweils eine generierte Konzeptillustration, eine Überschrift und direkt sichtbare Erklärungen. Die Bilder sind keine Firmenansichten oder tatsächlichen App-Screenshots. Board Magic verlinkt die vier ausgewählten eigenen Beiträge. Der zusätzliche Power-Platform-Überblick bleibt aufklappbar. Kopf-Navigation und diese Bereiche sind ohne JavaScript bedienbar.
+Im Werkzeugkasten füllt sich die vertikale Linie zwischen den sechs Schwerpunkten beim Scrollen. Der aktuelle Punkt leuchtet cyan, passierte Punkte werden violett ausgefüllt. Beim Zurückscrollen nimmt die Füllung wieder ab. Die Linie verbindet die tatsächlichen Mittelpunkte der Marker auch nach Größenänderungen; sie zeigt Lesefortschritt, keinen Kenntnisstand. Das Profil enthält einen persönlichen Einstieg, zwei Blöcke für das laufende THA-Studium im 7. Semester und das Fendt-Pflichtpraktikum sowie einen separaten Abschnitt zum gemeinsamen Board-Magic-Projekt. Zertifikate werden mit konkreten Nachweisen ergänzt. Die fünf Praxisprojekte zeigen kurze Titel und je einen Erklärungssatz. Weitere Informationen und die vier ausgewählten Board-Magic-Beiträge sind aufklappbar. Generierte Konzeptillustrationen bleiben als Design-Backup im Repository. Der zusätzliche Power-Platform-Überblick bleibt aufklappbar. Kopf-Navigation und diese Bereiche sind ohne JavaScript bedienbar.
 
 ## Produkticons
 
 Die unveränderten SVGs in `dist/assets/` stammen aus den offiziellen Microsoft-Sammlungen. Quellen und Verwendungshinweise stehen in `ASSET-SOURCES.md`.
+
+## Projektkarten
+
+Die fünf Projektkarten verwenden kurze Titel und einen Erklärungssatz ohne generierte Titelbilder. Die Pforten-App steht als Power-Platform-Projekt zuerst. Alle Karten haben dieselbe Höhe; zusätzliche Informationen und Board-Magic-Nachweise sind über native Details-Elemente erreichbar. Längere Inhalte scrollen innerhalb des Detailbereichs, ohne das Raster zu verschieben.
+
+Das Portfolio soll Bewerbungen mit Schwerpunkt Power Platform Development ergänzen und zugleich für mögliche Projektanfragen geeignet sein.

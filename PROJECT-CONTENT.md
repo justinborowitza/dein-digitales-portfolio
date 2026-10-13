@@ -27,7 +27,7 @@ Branch development and Cloudflare previews are grounded in Justin's prior user m
 
 ## Project visuals
 
-The five new project covers in `dist/assets/projects/` are generated conceptual illustrations. They do not represent real Fendt premises, operational screenshots, actual manufacturing parts, live QR identifiers or the actual Board Magic UI. Each displayed cover is labeled “Illustration”. Generation prompts are recorded in `ASSET-SOURCES.md`.
+The five new project covers in `dist/assets/projects/` are generated conceptual illustrations. They do not represent real Fendt premises, operational screenshots, actual manufacturing parts, live QR identifiers or the actual Board Magic UI. The covers are retained as design backups and are no longer displayed in the compact project cards. Generation prompts are recorded in `ASSET-SOURCES.md`.
 
 ## Remaining fields
 

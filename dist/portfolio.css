@@ -334,7 +334,7 @@ h1 { margin:25px 0 25px;font-size:clamp(58px,7vw,94px);line-height:.94;letter-sp
   .practice-projects .project-card#board-magic .project-cover img { height:auto;aspect-ratio:1.62; }
   .practice-projects .project-card#board-magic .project-body { padding:22px 20px 20px; }
   .practice-projects .project-body { padding:22px 20px 20px; }
-  .practice-projects .project-body h3 { font-size:25px; }
+  .practice-projects .project-body h3 { font-size:clamp(20px,5.6vw,25px); }
   .practice-projects .project-description { font-size:13px; }
   .platform-products { grid-template-columns:repeat(2,minmax(0,1fr));gap:8px; }
   .platform-product { min-height:128px;padding:13px; }
@@ -353,4 +353,33 @@ h1 { margin:25px 0 25px;font-size:clamp(58px,7vw,94px);line-height:.94;letter-sp
 }
 @media (prefers-reduced-motion:reduce) {
   .planet,.hero-object,.hero-object::after,.project-cover img,.practice-projects .project-card,.topnav a::after { animation:none!important;transition:none!important; }
+}
+
+/* Compact project cards. Details scroll inside each equally sized card. */
+.sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0; }
+.practice-projects { align-items:stretch;gap:18px; }
+.practice-projects .project-card,
+.practice-projects .project-card#board-magic { display:block;grid-column:auto;height:370px;min-height:0;transform:none;box-shadow:none; }
+.practice-projects .project-card:hover { transform:none;box-shadow:none;border-color:rgba(173,114,255,.5); }
+.practice-projects .project-body,
+.practice-projects .project-card#board-magic .project-body { display:grid;grid-template-rows:24px 42px 52px 44px minmax(0,1fr);gap:10px;height:100%;min-height:0;padding:25px 27px; }
+.practice-projects .project-context { margin:0;align-self:center;font-size:10px;letter-spacing:.07em;line-height:1.5; }
+.practice-projects .project-body h3 { margin:0;align-self:center;font-size:27px;line-height:1.2;letter-spacing:-.04em; }
+.practice-projects .project-description { margin:0;font-size:14px;line-height:1.65;color:#c3bdcb; }
+.practice-projects .project-stack { margin:0;padding:12px 0 0;border-top:1px solid var(--line);font-size:11px;line-height:1.6; }
+.project-details { min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#735092 #100d16; }
+.project-details summary { position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;min-height:38px;padding:6px 4px;color:var(--lavender);background:#100d16;cursor:pointer;font-size:13px;list-style:none;border-radius:3px; }
+.project-details summary::-webkit-details-marker { display:none; }
+.project-details summary::after { content:'+';font-size:20px;line-height:1;color:var(--violet-hot); }
+.project-details[open] summary::after { content:'−'; }
+.project-details summary:hover { color:var(--white); }
+.project-details summary:focus-visible { outline-offset:-2px; }
+.project-detail-copy { padding:8px 4px 4px; }
+.project-detail-copy p { margin:0 0 12px;color:#c3bdcb;font-size:13px;line-height:1.75; }
+.project-detail-copy .project-evidence { margin:0 0 8px;font-size:12px; }
+@media (max-width:560px) {
+  .practice-projects .project-card,.practice-projects .project-card#board-magic { height:370px; }
+  .practice-projects .project-body,.practice-projects .project-card#board-magic .project-body { padding:22px 20px;grid-template-rows:28px 40px 54px 46px minmax(0,1fr); }
+  .practice-projects .project-body h3 { font-size:25px; }
+  .project-details summary { min-height:44px; }
 }
