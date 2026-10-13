@@ -97,9 +97,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
 .profile-panel h3{margin:22px 0 3px;font-size:25px;font-weight:500;letter-spacing:-.045em}
 .profile-panel p{margin:6px 0;color:var(--muted);font-size:13px;line-height:1.75}
 .profile-panel .status{color:#d9c4ff}
-.semester{display:flex;align-items:baseline;gap:10px;margin-top:19px}
-.semester strong{font-size:54px;font-weight:500;line-height:1;letter-spacing:-.07em}
-.semester span{color:var(--muted);font-size:12px}
 .contact-section{padding:72px 0}
 .contact-inner{display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px}
 .contact-inner h2{margin:10px 0;font-size:clamp(34px,5vw,58px);font-weight:500;line-height:1.05;letter-spacing:-.07em}

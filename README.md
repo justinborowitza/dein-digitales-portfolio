@@ -14,4 +14,4 @@ Statisches Bewerbungsportfolio mit Schwerpunkt Power Platform Development.
 
 ## Inhalte
 
-Die Portfolioseite zeigt vier bei Fendt beschriebene Projekte und ausgewählte Beiträge zum gemeinsamen Flutter-Spiel Board Magic. PoCs und Prototypen werden als solche bezeichnet. Kennzahlen, vertrauliche Oberflächen und nicht belegte Ergebnisse werden nicht ergänzt. Projektquellen stehen in `PROJECT-CONTENT.md`.
+Die Portfolioseite zeigt ausgewählte Arbeiten aus einem anonymisierten Industriepraktikum und Beiträge zum gemeinsamen Flutter-Spiel Board Magic. Proofs of Concept und Prototypen werden als solche bezeichnet. Kennzahlen, vertrauliche Oberflächen und nicht belegte Ergebnisse werden nicht ergänzt. Projektquellen stehen in `PROJECT-CONTENT.md`.

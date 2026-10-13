@@ -1,6 +1,6 @@
 # Portfolio content sources
 
-## Fendt
+## Praxisprojekte im Industrieumfeld
 
 Source: Justin's descriptions in this portfolio chat on 2026-10-08.
 
@@ -31,7 +31,7 @@ Project graphics on the overview and case-study pages are schematic HTML/CSS ill
 
 ## Remaining fields
 
-Education supplied by Justin on 2026-10-08: currently in semester 7 of Wirtschaftsinformatik at THA. No degree completion, study start date or qualification title is inferred. The personal profile and study block include this current status. The profile is presented with study/practice blocks and a Board Magic paragraph. No empty certificate block is displayed.
+Education supplied by Justin on 2026-10-08: Wirtschaftsinformatik at the Technische Hochschule Augsburg. No degree completion, study dates or qualification title are inferred. The education is shown once as a compact profile card. No semester is displayed because it quickly becomes outdated.
 
 The toolbox presents six project-grounded capabilities with descriptions and links: Excel reporting, Power Apps, Power Automate archival, SharePoint/document/API integration, Flutter UI and tests, Git/GitHub/Cloudflare collaboration. Its animated line and dots display reading progress through the six topics, not skill ratings. Unconfirmed candidate technologies are not presented as established skills.
 
