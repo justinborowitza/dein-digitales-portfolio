@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Typografie – drei Entwürfe</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="cube.css"><link rel="stylesheet" href="type-prototypes.css">
+<script type="module" src="cube.js"></script><script src="type-prototypes.js" defer></script>
+</head>
+<body class="direction-1">
+<header class="prototype-toolbar wrap">
+<div><span class="eyebrow">Typografie / Prototyp</span><p>Drei Lichtstimmungen für deinen Einstieg.</p></div>
+<div class="prototype-controls" role="group" aria-label="Design auswählen">
+<button type="button" data-direction="1" aria-pressed="true">01 · Soft Glow</button>
+<button type="button" data-direction="2" aria-pressed="false">02 · Lichtreflex</button>
+<button type="button" data-direction="3" aria-pressed="false">03 · Lichtkante</button>
+</div>
+</header>
+<main>
+<section class="hero wrap" aria-labelledby="hero-title">
+<div class="hero-grid">
+<div class="hero-title">
+<p class="eyebrow">Wirtschaftsinformatik · THA</p>
+<h1 id="hero-title" class="lit-heading"><span class="headline-line">Aus Ideen</span><span class="headline-line violet">werden</span><span class="headline-line violet">Lösungen.</span></h1>
+<p>Power Apps · Automatisierung · Daten</p>
+<div class="actions"><a class="button" href="index.html#projekte">Projekte ansehen <span aria-hidden="true">↗</span></a><a class="text-action" href="index.html#profil">Mein Weg</a></div>
+</div>
+<div class="cube-stage" tabindex="0" role="group" aria-label="Interaktiver 3D-Würfel" aria-describedby="cube-help">
+<img class="cube-fallback" src="assets/hero-cube.png" alt="Schwebender Graphitwürfel" width="1254" height="1254"><canvas class="cube-canvas" aria-hidden="true"></canvas><span class="cube-shadow" aria-hidden="true"></span>
+<span id="cube-help" class="cube-help">Ziehen zum Drehen · Pfeiltasten · Esc zum Zurücksetzen</span>
+</div>
+</div>
+<div class="prototype-notes">
+<p id="direction-description" aria-live="polite">DM Sans · weiches Lavendellicht · ruhiges Einblenden.</p>
+<div><button type="button" id="replay">Animation erneut ansehen ↻</button><button type="button" class="motion-toggle" aria-pressed="false">Bewegung pausieren Ⅱ</button></div>
+</div>
+</section>
+</main>
+<noscript><p class="wrap">Die erste Richtung ist sichtbar. Zum Wechseln der Entwürfe wird JavaScript benötigt.</p></noscript>
+</body></html>

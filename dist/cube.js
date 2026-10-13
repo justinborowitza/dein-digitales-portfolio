@@ -12,13 +12,13 @@ async function initCube() {
   renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
   renderer.setClearColor(0x08070b, 0);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.15;
+  renderer.toneMappingExposure = 1.35;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(35, 1, .1, 30);
   camera.position.z = 7.5;
   const cube = new THREE.Mesh(
     new RoundedBoxGeometry(2, 2, 2, 5, .09),
-    new THREE.MeshStandardMaterial({ color: 0x45414c, metalness: .48, roughness: .3 }),
+    new THREE.MeshStandardMaterial({ color: 0x605a6a, metalness: .4, roughness: .3 }),
   );
   scene.add(cube);
   scene.add(new THREE.HemisphereLight(0xb6b8ca, 0x100b19, 1.5));
@@ -26,7 +26,7 @@ async function initCube() {
   key.position.set(-3, 5, 4); scene.add(key);
   const rim = new THREE.DirectionalLight(0x9862ef, 3.4);
   rim.position.set(4, 1, -2); scene.add(rim);
-  const fill = new THREE.DirectionalLight(0x8c80af, .5);
+  const fill = new THREE.DirectionalLight(0xb6a9cf, .9);
   fill.position.set(1, -2, 4); scene.add(fill);
 
   const rest = { x: .43, y: -.64 };
@@ -61,6 +61,7 @@ async function initCube() {
   }).observe(stage);
   stage.addEventListener('pointerdown', e => {
     if (e.button !== 0) return;
+    stage.classList.remove('keyboard-focus');
     drag = { id: e.pointerId, x: e.clientX, y: e.clientY, rx: target.x, ry: target.y };
     stage.setPointerCapture(e.pointerId); stage.classList.add('is-dragging');
     stage.focus({ preventScroll: true }); requestRender();
@@ -86,6 +87,7 @@ async function initCube() {
   stage.addEventListener('keydown', e => {
     const keys = ['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Escape','Home'];
     if (!keys.includes(e.key)) return;
+    stage.classList.add('keyboard-focus');
     e.preventDefault();
     if (e.key === 'ArrowLeft') target.y -= .2;
     if (e.key === 'ArrowRight') target.y += .2;
@@ -93,6 +95,9 @@ async function initCube() {
     if (e.key === 'ArrowDown') target.x += .2;
     if (e.key === 'Escape' || e.key === 'Home') { target = { ...rest }; hover = { x: 0, y: 0 }; }
     requestRender();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Tab') stage.classList.add('keyboard-focus');
   });
   stage.addEventListener('dblclick', () => { target = { ...rest }; hover = { x: 0, y: 0 }; requestRender(); });
   new MutationObserver(requestRender).observe(document.body, { attributes: true, attributeFilter: ['class'] });
