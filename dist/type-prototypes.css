@@ -13,19 +13,19 @@
 .direction-1 .headline-line{animation:soft-arrival .95s cubic-bezier(.2,.65,.3,1) both}
 .direction-1 .headline-line:nth-child(2){animation-delay:.12s}
 .direction-1 .headline-line:nth-child(3){animation-delay:.24s}
-.direction-1 .violet{color:#d6b9ff;text-shadow:0 0 22px #9b5fe54d,0 0 65px #8c43ff28}
+.direction-1 .lit-heading .violet{color:#d6b9ff;text-shadow:0 0 22px #9b5fe54d,0 0 65px #8c43ff28}
 .direction-1 .lit-heading:hover .violet{text-shadow:0 0 24px #9b5fe580,0 0 72px #8c43ff40}
 .direction-2 .lit-heading{font-family:'Manrope',sans-serif;font-weight:600;letter-spacing:-.065em}
-.direction-2 .headline-line{color:transparent;background:linear-gradient(110deg,#a77ae2 0%,#c0a2eb 30%,#f8f1ff 45%,#cdb6ef 52%,#a77ae2 66%,#a77ae2 100%);background-size:250% 100%;background-position:100% 0;background-clip:text;-webkit-background-clip:text;animation:light-pass 3s cubic-bezier(.25,.6,.4,1) both;filter:drop-shadow(0 0 10px #a96cff23)}
+.direction-2 .lit-heading .headline-line{color:transparent;background:linear-gradient(110deg,#a77ae2 0%,#c0a2eb 30%,#f8f1ff 45%,#cdb6ef 52%,#a77ae2 66%,#a77ae2 100%);background-size:250% 100%;background-position:100% 0;background-clip:text;-webkit-background-clip:text;animation:light-pass 3s cubic-bezier(.25,.6,.4,1) both;filter:drop-shadow(0 0 10px #a96cff23)}
 .direction-2 .headline-line:first-child{background-image:linear-gradient(110deg,#d4cfe0 0%,#d4cfe0 30%,#fff 45%,#eee8f8 52%,#d4cfe0 66%,#d4cfe0 100%)}
 .direction-2 .headline-line:nth-child(2){animation-delay:.15s}
 .direction-2 .headline-line:nth-child(3){animation-delay:.3s}
-.direction-2 .lit-heading:hover .headline-line{background-position:0 0;transition:background-position 1.6s}
+.direction-2 .lit-heading:hover .headline-line{filter:drop-shadow(0 0 16px #a96cff50);transition:filter .4s}
 .direction-3 .lit-heading{font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:-.065em}
 .direction-3 .headline-line{animation:edge-arrival .85s cubic-bezier(.16,1,.3,1) both}
 .direction-3 .headline-line:nth-child(2){animation-delay:.13s}
 .direction-3 .headline-line:nth-child(3){animation-delay:.26s}
-.direction-3 .violet{color:#b487f0;text-shadow:1px 0 0 #eddbff,0 0 12px #a96cff35}
+.direction-3 .lit-heading .violet{color:#b487f0;text-shadow:1px 0 0 #eddbff,0 0 12px #a96cff35}
 .direction-3 .hero-title:before{content:'';position:absolute;inset:15% -15%;background:radial-gradient(ellipse at 15% 75%,#8c43ff15,transparent 60%);z-index:-1;pointer-events:none}
 .direction-3 .lit-heading:hover .violet{color:#cba2ff;text-shadow:1px 0 0 #fff,0 0 18px #a96cff55;transition:color .3s,text-shadow .3s}
 @keyframes soft-arrival{from{opacity:0;transform:translateY(10px);filter:blur(3px)}to{opacity:1;transform:none;filter:blur(0)}}
