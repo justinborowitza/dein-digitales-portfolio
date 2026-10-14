@@ -40,6 +40,7 @@ export default {
     if (!ready) {
       return json({error:'Der Formularversand ist noch nicht freigeschaltet. Bitte versuchen Sie es später erneut.'},503);
     }
+    if(typeof data.requestId!=='string'||!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(data.requestId))return json({error:'Bitte laden Sie das Formular neu und versuchen Sie es erneut.'},400);
     try {
       const token=data['cf-turnstile-response'];
       if(typeof token!=='string'||!token||token.length>2048)return json({error:'Bitte schließen Sie die Sicherheitsprüfung ab.'},400);
@@ -52,7 +53,7 @@ export default {
       if(!check.ok||!verification?.success||verification.hostname!==url.hostname||verification.action!=='contact')return json({error:'Die Sicherheitsprüfung ist abgelaufen oder ungültig. Bitte versuchen Sie es erneut.'},400);
       const response=await fetch('https://api.resend.com/emails',{
         method:'POST',
-        headers:{'Authorization':`Bearer ${env.RESEND_API_KEY}`,'Content-Type':'application/json'},
+        headers:{'Authorization':`Bearer ${env.RESEND_API_KEY}`,'Content-Type':'application/json','Idempotency-Key':`portfolio/${data.requestId}`},
         body:JSON.stringify({from:env.CONTACT_FROM,to:[env.CONTACT_TO],reply_to:email,
           subject:'Neue Anfrage über das Portfolio',text:`Name: ${name}\nE-Mail: ${email}\n\n${message}`}),
         signal:AbortSignal.timeout(10000)

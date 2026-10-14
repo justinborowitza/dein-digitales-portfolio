@@ -3,6 +3,7 @@ if (form) {
   const status = document.querySelector('#contact-status');
   const button = form.querySelector('button[type="submit"]');
   let widget;
+  let lastSubmission;
   async function initialize() {
     try {
       const response=await fetch('/api/contact',{signal:AbortSignal.timeout(8000)});
@@ -36,10 +37,16 @@ if (form) {
     status.removeAttribute('data-state');
     try {
       const fields = new FormData(form);
+      const payload = Object.fromEntries(fields);
+      const signature = JSON.stringify([payload.name, payload.email, payload.message]);
+      if (!lastSubmission || lastSubmission.signature !== signature) {
+        lastSubmission = {signature, requestId: crypto.randomUUID()};
+      }
+      payload.requestId = lastSubmission.requestId;
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(Object.fromEntries(fields)),
+        body: JSON.stringify(payload),
         signal: AbortSignal.timeout(20000)
       });
       const result = await response.json().catch(() => null);
@@ -49,6 +56,7 @@ if (form) {
       status.textContent = 'Vielen Dank! Ihre Nachricht wurde versendet.';
       status.dataset.state = 'success';
       form.reset();
+      lastSubmission = null;
     } catch (error) {
       status.textContent = error.name === 'TimeoutError' || error.name === 'TypeError'
         ? 'Der Versand ist gerade nicht erreichbar. Bitte versuchen Sie es später erneut.'

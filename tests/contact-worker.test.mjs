@@ -4,7 +4,7 @@ import {test} from 'node:test';
 const source=await readFile(new URL('../dist/_worker.js',import.meta.url),'utf8');
 const {default:worker}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 const url='https://portfolio.example/api/contact';
-const payload={name:'Test Person',email:'test@example.org',message:'Eine Anfrage für eine passende App.',website:'','cf-turnstile-response':'test-token'};
+const payload={name:'Test Person',email:'test@example.org',message:'Eine Anfrage für eine passende App.',website:'','cf-turnstile-response':'test-token',requestId:'0aba4367-3cd3-4a71-aec4-5221fb30e6cf'};
 const env={RESEND_API_KEY:'test-secret',CONTACT_TO:'owner@example.org',CONTACT_FROM:'Portfolio <sender@example.org>',TURNSTILE_SECRET_KEY:'test-turnstile-secret',TURNSTILE_SITE_KEY:'test-sitekey'};
 const request=(body=payload,origin='https://portfolio.example')=>new Request(url,{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify(body)});
 
@@ -25,7 +25,7 @@ test('rejects cross-origin, invalid fields, honeypot and oversize bodies',async(
 test('validates challenge before sending and uses fixed sender with reply_to',async t=>{
   const calls=[];
   t.mock.method(globalThis,'fetch',async(target,options)=>{
-    calls.push({target,body:JSON.parse(options.body)});
+    calls.push({target,body:JSON.parse(options.body),headers:options.headers});
     return Response.json(target.includes('siteverify')?{success:true,hostname:'portfolio.example',action:'contact'}:{id:'test-email-id'});
   });
   const response=await worker.fetch(request(),env);
@@ -33,6 +33,18 @@ test('validates challenge before sending and uses fixed sender with reply_to',as
   assert.equal(calls.length,2);assert.match(calls[0].target,/siteverify/);
   assert.equal(calls[1].body.from,env.CONTACT_FROM);assert.deepEqual(calls[1].body.to,[env.CONTACT_TO]);assert.equal(calls[1].body.reply_to,payload.email);
   assert.ok(calls[1].body.text.includes(payload.message));assert.equal(calls[1].body.html,undefined);
+  assert.equal(calls[1].headers['Idempotency-Key'],`portfolio/${payload.requestId}`);
+});
+test('missing challenge and invalid request IDs cannot trigger provider calls',async t=>{
+  let calls=0;t.mock.method(globalThis,'fetch',async()=>{calls++;return Response.json({});});
+  assert.equal((await worker.fetch(request({...payload,requestId:'bad'}),env)).status,400);
+  assert.equal((await worker.fetch(request({...payload,'cf-turnstile-response':''}),env)).status,400);
+  assert.equal(calls,0);
+});
+test('rejects oversized streamed bodies without a declared content length',async()=>{
+  const stream=new ReadableStream({start(controller){controller.enqueue(new TextEncoder().encode('a'.repeat(20001)));controller.close();}});
+  const req=new Request(url,{method:'POST',duplex:'half',headers:{Origin:'https://portfolio.example','Content-Type':'application/json'},body:stream});
+  assert.equal((await worker.fetch(req,env)).status,413);
 });
 test('invalid challenge cannot trigger an email',async t=>{
   let calls=0;t.mock.method(globalThis,'fetch',async()=>{calls++;return Response.json({success:false});});

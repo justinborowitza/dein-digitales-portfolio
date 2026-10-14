@@ -22,3 +22,6 @@ The hero uses an original RoundedBoxGeometry scene rendered with Three.js r180 (
 ## Simple project SVGs
 
 The five SVG illustrations under `dist/assets/projects/` are original simple vector drawings for this portfolio: check-in form, document, schematic QR pattern, reporting chart and game die. They are illustrative symbols, not application screenshots, scannable QR codes or measured project results.
+## GitHub button
+
+White Invertocat SVG from the official [GitHub Brand Toolkit](https://brand.github.com/foundations/logo), downloaded from `https://brand.github.com/GitHub_Logos.zip`, file `GitHub Logos/SVG/GitHub_Invertocat_White.svg`. Saved unchanged as `dist/assets/github-mark-white.svg`, used to link to Justin's GitHub profile.
