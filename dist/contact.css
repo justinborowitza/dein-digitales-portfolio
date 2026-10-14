@@ -50,3 +50,5 @@
 
 .github-mark{display:block;flex:none;width:22px;height:22px}
 .electro-contact .contact-links a{gap:12px}
+
+#contact-challenge:not(:empty){margin-bottom:16px}

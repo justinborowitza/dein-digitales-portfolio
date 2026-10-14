@@ -1,8 +1,10 @@
 # Kontaktformular freischalten
 
-Das Kontaktformular ist mit Resend und Cloudflare Turnstile verbunden. Die fünf Konfigurationswerte sind als Secrets im Worker und im Pages-Projekt hinterlegt. Die lokale `.dev.vars` ist von Git ausgeschlossen. Der Resend-Schlüssel hat ausschließlich Sending Access. Ein Turnstile-Widget schützt die beiden Produktionshosts.
+Das Kontaktformular ist mit Resend und Cloudflare Turnstile verbunden. Die fünf Konfigurationswerte sind als Secrets im Worker und im Pages-Projekt hinterlegt. Die lokale `.dev.vars` ist von Git ausgeschlossen. Der Resend-Schlüssel hat ausschließlich Sending Access. Ein Turnstile-Widget schützt die beiden Produktionshosts; `127.0.0.1` ist zusätzlich für die lokale Vorschau freigegeben.
 
 Vorläufiger Empfänger (vom Nutzer bestätigt): `justin.maretic@gmail.com`. Absender: `Justin Portfolio <onboarding@resend.dev>`. Ohne eigene Domain kann dieser Testabsender nur an die E-Mail-Adresse des Resend-Kontos senden. Die öffentliche Kontaktadresse bleibt `justinborowitza99@gmail.com`. Für einen anderen Empfänger muss später die Absenderdomain verifiziert oder die Resend-Konto-Adresse entsprechend geändert werden.
+
+Echter Test am 14. Oktober 2026: Der Nutzer hat die manuelle Turnstile-Prüfung abgeschlossen und die vorbereitete Nachricht über das öffentliche Worker-Formular abgesendet. Die Oberfläche bestätigte den Versand; Resend zeigte die Nachricht an `justin.maretic@gmail.com` als **Delivered**. Beide öffentlichen Adressen melden die Versandkonfiguration als bereit.
 
 ## Einrichtung
 
