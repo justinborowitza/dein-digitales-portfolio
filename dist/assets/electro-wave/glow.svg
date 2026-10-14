@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="971.718" height="581" viewBox="0 0 971.718 581" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="blue blur" filter="url(#filter0_f_0_170)" d="M40.0139 541C40.1848 521.34 41.946 501.743 45.3016 482.438C71.5193 316.052 228.701 184.21 396.178 187.407C405.966 187.411 415.755 187.414 425.544 187.414C545.987 187.414 666.431 187.09 786.875 186.443C844.081 186.852 898.879 149.919 920.39 97.4825C928.062 79.335 931.901 59.631 931.711 40C931.557 59.6321 927.393 79.1932 919.49 97.0948C897.271 148.835 842.793 184.232 786.875 183.23C666.431 182.583 545.987 182.259 425.544 182.259C415.755 182.259 405.966 182.261 396.178 182.266C226.073 179.049 67.7622 314.935 44.3355 482.278C41.2761 501.687 39.8411 521.34 40.0139 541Z" pathLength="1" fill="#078EFB"/>
+<defs>
+<filter id="filter0_f_0_170" x="-1.48173e-06" y="0" width="971.718" height="581" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_0_170"/>
+</filter>
+</defs>
+</svg>

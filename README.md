@@ -8,8 +8,9 @@ Statisches Bewerbungsportfolio mit Schwerpunkt Power Platform Development.
 - Jede Projektkarte führt auf eine eigene kurze Fallstudie unter `dist/projects/`.
 - `dist/site.css` enthält das responsive Design, `dist/case.css` die Fallstudien und `dist/portfolio.js` Mobilnavigation und Bewegungsschalter.
 - Projektgrafiken sind schematische HTML/CSS-Illustrationen, keine echten Anwendungsscreenshots.
-- Der Einstieg zeigt ein echtes, lokal geladenes 3D-Modell: `dist/cube.js` steuert den abgerundeten Graphitwürfel, `dist/cube.css` die Darstellung. Ziehen dreht ihn, Pfeiltasten bedienen ihn ohne Maus; Escape setzt ihn zurück. Automatische Bewegung respektiert den Pausenschalter und reduzierte Bewegung. Ohne WebGL oder JavaScript bleibt ein statisches Bild sichtbar.
-- Three.js r180 und RoundedBoxGeometry liegen mit MIT-Lizenz unter `dist/vendor/three/`. Das JB bleibt als Kennzeichnung im Header und Footer erhalten.
+- Der Einstieg verwendet die angepasste Figma-Animation mit offiziellen Microsoft-SVGs. Sechs Produktkacheln entfalten sich, kreisen und fließen in der Mitte zur Power Platform zusammen. `dist/platform-motion.css` enthält die Figma-Keyframes, `dist/landing-motion.css` das responsive Layout und `dist/landing-motion.js` Größenanpassung sowie das Pausieren außerhalb des sichtbaren Bereichs.
+- Electro Wave liegt als animierte SVG-Komposition hinter dem Kontaktbereich. Die Originalpfade aus Figma werden über normalisierte SVG-Masken animiert. Beide Animationen respektieren den Bewegungsschalter, reduzierte Bewegung und ausgeblendete Browser-Tabs. Ohne JavaScript bleibt das Ökosystem statisch sichtbar.
+- Quellen und Produkt-Icons stehen in `dist/assets/microsoft/SOURCES.md`; die Figma-Referenzen sind in `ASSET-SOURCES.md` dokumentiert. Die Illustration des Ökosystems ersetzt keine belegten Projekt- oder Erfahrungsangaben. Der frühere Würfel und Three.js bleiben als ungenutzte Dateien erhalten.
 - `.openai/hosting.json` legt den statischen Veröffentlichungsordner fest.
 
 ## Cloudflare-Deployment
