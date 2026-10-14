@@ -8,7 +8,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
 .wrap{width:min(var(--max),calc(100% - 64px));margin-inline:auto}
 .topbar{height:82px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-mark{width:38px;height:38px;color:#ddcaff}
+.brand-mark{display:block;flex:none;width:54px;height:45px;filter:drop-shadow(0 0 5px #a96cff26);transition:filter .2s ease}
+.brand:hover .brand-mark{filter:drop-shadow(0 0 7px #a96cff40)}
+.brand-mark img{display:block;width:100%;height:100%;object-fit:contain}
 .brand-mark svg{width:100%;height:100%}
 .brand strong,.brand small{display:block}
 .brand strong{font-size:13px;line-height:1.35;letter-spacing:.02em}
