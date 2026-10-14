@@ -3,9 +3,10 @@
 .contact-panel .contact-inner h2{max-width:12ch;font-size:clamp(36px,4vw,52px);letter-spacing:-.045em}
 .contact-panel .contact-inner p:not(.eyebrow){margin:22px 0;max-width:36ch;font-size:16px;line-height:1.7}
 .contact-panel{padding:80px 0 96px}
-.electro-contact{height:280px;min-height:0;padding:0;display:flex;align-items:center}
+.electro-contact{height:clamp(460px,56.25vw,720px);min-height:0;padding:0;display:flex;align-items:center}
 .electro-contact .contact-inner{gap:0}
-.electro-contact .electro-art{opacity:.55}
+.electro-contact .electro-art{inset:0;width:100%;height:100%;transform:none;opacity:.7}
+.electro-contact .electro-art>svg{width:100%;height:100%;min-height:0;overflow:hidden}
 .electro-contact .contact-links a{min-width:180px;min-height:58px;justify-content:center;font-size:16px;padding:14px 28px}
 .contact-aside{padding-top:12px}
 .contact-aside .contact-profile{display:inline-flex;gap:12px;align-items:center;min-height:44px;color:#d6b9ff;font-size:14px;border-bottom:1px solid #d6b9ff40}
@@ -46,7 +47,7 @@
 .legal-main .legal-missing{color:#d6b9ff}
 @media(max-width:700px){.platform-center{font-size:22px}.platform-center>strong{font-size:27px}}
 @media(max-width:850px){.contact-panel .contact-inner{gap:32px}.contact-form{padding:24px}.footer-grid{gap:30px;grid-template-columns:1.5fr 1fr 1fr}}
-@media(max-width:700px){.contact-panel{padding:56px 0 64px}.electro-contact{height:220px;padding:0}.contact-panel .contact-inner{grid-template-columns:1fr;gap:32px}.contact-aside{padding-top:0}.contact-panel .contact-inner h2{max-width:18ch}.contact-panel .contact-inner p:not(.eyebrow){max-width:42ch}.contact-form{padding:22px 18px}.contact-form button{width:100%}.site-footer{padding-top:36px}.footer-grid{grid-template-columns:1fr 1fr;gap:30px 24px}.footer-identity{grid-column:1/-1}.legal-main{padding-top:38px}}
+@media(max-width:700px){.contact-panel{padding:56px 0 64px}.electro-contact{height:360px;padding:0}.contact-panel .contact-inner{grid-template-columns:1fr;gap:32px}.contact-aside{padding-top:0}.contact-panel .contact-inner h2{max-width:18ch}.contact-panel .contact-inner p:not(.eyebrow){max-width:42ch}.contact-form{padding:22px 18px}.contact-form button{width:100%}.site-footer{padding-top:36px}.footer-grid{grid-template-columns:1fr 1fr;gap:30px 24px}.footer-identity{grid-column:1/-1}.legal-main{padding-top:38px}}
 
 .github-mark{display:block;flex:none;width:22px;height:22px}
 .electro-contact .contact-links a{gap:12px}
