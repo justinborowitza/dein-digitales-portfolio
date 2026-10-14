@@ -42,6 +42,8 @@ if (workflowTrack) {
     workflowTrack.style.setProperty('--rail-height', `${length}px`);
     workflowTrack.style.setProperty('--workflow-progress', String(progress));
     steps.forEach((step, index) => step.classList.toggle('is-reached', centers[index] <= readingLine + 1));
+    const current = Math.max(0, centers.findLastIndex(center => center <= readingLine + 1));
+    steps.forEach((step, index) => step.classList.toggle('is-current', index === current));
   }
   function scheduleWorkflow() {
     if (!pending) { pending = true; requestAnimationFrame(updateWorkflow); }
