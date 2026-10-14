@@ -1,6 +1,6 @@
 # Persönliches Portfolio
 
-Statisches Bewerbungsportfolio mit Schwerpunkt Power Platform Development.
+Bewerbungsportfolio mit Schwerpunkt Power Platform Development und vorbereitetem serverseitigem Kontaktformular.
 
 ## Aufbau
 
@@ -13,6 +13,9 @@ Statisches Bewerbungsportfolio mit Schwerpunkt Power Platform Development.
 - Electro Wave liegt als animierte SVG-Komposition hinter dem Kontaktbereich. Die Originalpfade aus Figma werden über normalisierte SVG-Masken animiert. Beide Animationen respektieren den Bewegungsschalter, reduzierte Bewegung und ausgeblendete Browser-Tabs. Ohne JavaScript bleibt das Ökosystem statisch sichtbar.
 - Quellen und Produkt-Icons stehen in `dist/assets/microsoft/SOURCES.md`; die Figma-Referenzen sind in `ASSET-SOURCES.md` dokumentiert. Die Illustration des Ökosystems ersetzt keine belegten Projekt- oder Erfahrungsangaben. Der frühere Würfel und Three.js bleiben als ungenutzte Dateien erhalten.
 - `.openai/hosting.json` legt den statischen Veröffentlichungsordner fest.
+- Header und Footer verwenden das lokale JB-Monogramm. Der Footer verlinkt Navigation, Kontakt, Impressum und Datenschutz auf allen Portfolio- und Projektseiten.
+- `dist/contact.css` gestaltet Formular, Footer und rechtliche Seiten. `dist/contact.js` prüft die Versandkonfiguration und steuert Sicherheitsprüfung, Versand und Rückmeldungen. `dist/_worker.js` übernimmt den Versand via Resend; auf Cloudflare Pages läuft er im Advanced Mode. Für die Freischaltung siehe `CONTACT-SETUP.md`. Ohne Konfiguration bleibt der Versand deaktiviert und die direkte E-Mail-Adresse verfügbar.
+- Geist und Geist Mono werden einschließlich ihrer OFL-Lizenzen lokal unter `dist/assets/fonts` ausgeliefert.
 
 ## Cloudflare-Deployment
 
@@ -21,6 +24,8 @@ Cloudflare Workers veröffentlicht mit `npx wrangler deploy` den vorhandenen Ord
 Worker-Adresse: https://uniqbit-consulting-simulation.justin-maretic.workers.dev/
 
 Für Cloudflare Pages: GitHub-Repository `justinborowitza/dein-digitales-portfolio`, Produktionsbranch `main`, Framework `None`, kein Build-Befehl, Ausgabeverzeichnis `dist` und Root-Verzeichnis `/`. Pushes auf `main` veröffentlichen die Website automatisch.
+
+Für eine lokale Vorschau mit Kontakt-Backend: `npx wrangler dev --local --port 8878`. Der einfache Python-Server zeigt nur statische Inhalte. Serverseitige Tests: `node --test tests/contact-worker.test.mjs`.
 
 ## Inhalte
 
