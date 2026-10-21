@@ -19,11 +19,11 @@ Bewerbungsportfolio mit Schwerpunkt Power Platform Development und vorbereitetem
 
 ## Cloudflare-Deployment
 
-Cloudflare Workers veröffentlicht mit `npx wrangler deploy` den vorhandenen Ordner `dist`; ein Build-Schritt ist nicht nötig. `wrangler.jsonc` verwendet den bestehenden Worker `uniqbit-consulting-simulation`, damit dessen Dev-Adresse das Portfolio ausliefert.
+Cloudflare Workers veröffentlicht mit `npx wrangler deploy` den vorhandenen Ordner `dist`; ein Build-Schritt ist nicht nötig. `wrangler.jsonc` verwendet den Worker `justin-borowitza-portfolio`.
 
-Worker-Adresse: https://uniqbit-consulting-simulation.justin-maretic.workers.dev/
+Worker-Adresse: https://justin-borowitza-portfolio.justin-maretic.workers.dev/
 
-Für Cloudflare Pages: GitHub-Repository `justinborowitza/dein-digitales-portfolio`, Produktionsbranch `main`, Framework `None`, kein Build-Befehl, Ausgabeverzeichnis `dist` und Root-Verzeichnis `/`. Pushes auf `main` veröffentlichen die Website automatisch.
+Die aktuelle Veröffentlichung läuft als Worker und hat deshalb eine `workers.dev`-Adresse. Eine `pages.dev`-Adresse entsteht erst durch ein separates Cloudflare-Pages-Projekt. Dafür kann dasselbe GitHub-Repository `justinborowitza/dein-digitales-portfolio` mit Produktionsbranch `main`, Framework `None`, leerem Build-Befehl und Ausgabeverzeichnis `dist` verbunden werden. Da `dist/_worker.js` das Kontakt-Backend bereitstellt, muss dieses Pages-Projekt den Advanced Mode verwenden und die nötigen Kontakt-Secrets erhalten.
 
 Für eine lokale Vorschau mit Kontakt-Backend: `npx wrangler dev --local --port 8878`. Der einfache Python-Server zeigt nur statische Inhalte. Serverseitige Tests: `node --test tests/contact-worker.test.mjs`.
 

@@ -1,5 +1,5 @@
 {
-  "name": "uniqbit-consulting-simulation",
+  "name": "justin-borowitza-portfolio",
   "compatibility_date": "2026-10-14",
   "workers_dev": true,
   "main": "./dist/_worker.js",
