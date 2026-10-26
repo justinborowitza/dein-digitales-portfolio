@@ -1,0 +1,72 @@
+/* Portfolio hierarchy: two projects in focus, followed by supporting work. */
+.hero-title>p.eyebrow{font-size:11px;margin-bottom:22px;line-height:1.7}
+.hero-title h1{font-size:clamp(34px,3.55vw,50px);line-height:1.13}
+.hero-title>p:not(.eyebrow){font-size:17px;max-width:44ch;line-height:1.65;margin-top:22px}
+.hero-title>p:not(.eyebrow)+p{margin-top:14px}
+.project-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.project-card{grid-column:span 2;height:auto;min-height:370px}
+.project-featured{grid-column:span 3;min-height:490px}
+.project-featured .project-art{height:270px}
+.project-featured .project-content{padding:24px}
+.project-featured h3{font-size:29px;margin:10px 0}
+.project-featured .project-summary{max-width:48ch;font-size:14px;line-height:1.65}
+.project-featured .project-tag{font-size:10px}
+.project-featured .stack{margin-top:16px}
+.project-contribution{margin:18px 0 4px;color:var(--quiet);font-size:12px}
+.project-open{padding-top:18px}
+.board-preview{gap:20px;padding-top:24px;background:radial-gradient(ellipse at 50% 110%,#32658640,transparent 80%),#0b1322}
+.board-preview>img{width:auto;height:230px;max-width:42%;object-fit:contain;border:1px solid #ffffff20;border-radius:9px;align-self:flex-start;box-shadow:0 10px 22px #0006}
+.preview-label{position:absolute;left:16px;bottom:12px;font:9px var(--font-mono);letter-spacing:.04em;color:#d6e1ef;background:#0c111de8;padding:5px 8px;border-radius:3px}
+.gate-preview{padding:22px 26px 32px;background:radial-gradient(ellipse at 50% 110%,#3e756117,transparent 75%),#0d0e12}
+.gate-app{width:100%;max-width:490px;border:1px solid #ffffff20;border-radius:9px;background:#15151b;box-shadow:0 14px 35px #0004;overflow:hidden}
+.gate-app-bar{height:43px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 16px;border-bottom:1px solid #ffffff0d;background:#1a1a22}
+.gate-app-identity{display:flex;align-items:center;gap:9px;color:#e8e4ee;font-size:11px;font-weight:500}
+.gate-app-identity img{width:22px;height:22px;object-fit:contain}
+.gate-languages{display:flex;align-items:center;gap:7px;color:#aaa5b5;font:8px var(--font-mono)}
+.gate-languages i{width:2px;height:2px;border-radius:50%;background:#706b79}
+.gate-app-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:24px;padding:18px}
+.gate-form>strong{display:block;font-size:12px;font-weight:500;color:#efebf4;margin-bottom:12px}
+.gate-field{display:flex;align-items:center;gap:10px;margin-top:7px;padding:6px 8px;border:1px solid #ffffff12;border-radius:4px;background:#111116}
+.gate-field>span{font-size:9px;color:#a9a3b4}
+.gate-field>i{display:block;margin-left:auto;width:42%;height:3px;border-radius:2px;background:#ffffff0b}
+.gate-actions{display:flex;gap:7px;margin-top:12px}
+.gate-actions>span{padding:5px 9px;border:1px solid #ffffff19;border-radius:4px;font-size:9px;line-height:1.5;color:#bcb5c7}
+.gate-actions>span:first-child{display:flex;align-items:center;justify-content:space-between;flex:1;background:#c1dfd0;border-color:#c1dfd0;color:#142b23;font-weight:600}
+.gate-actions b{font-weight:400;margin-left:12px}
+.gate-system{align-self:center;padding-left:18px;border-left:1px solid #ffffff0d}
+.gate-system-label{display:block;margin-bottom:15px;color:#898390;font:7px var(--font-mono);letter-spacing:.07em}
+.gate-system>div{display:flex;align-items:center;gap:8px;font-size:9px;color:#d9d3e1;white-space:nowrap}
+.gate-system-icon{display:grid;place-items:center;width:24px;height:24px;flex:none;border:1px solid #75c4b32e;border-radius:5px;background:#1a3530;color:#99cebd;font-size:11px;font-weight:600}
+.gate-automate-icon{border-color:#95b9fb29;background:#202c41;color:#a7c2ef;font-size:16px}
+.gate-system small{display:block;color:#8d8797;font-size:8px;line-height:1.8}
+.gate-system-line{display:block;width:1px;height:13px;margin:5px 0 5px 11px;background:#ffffff1a}
+.gate-caption{position:absolute;bottom:10px;left:0;right:0;text-align:center;font:8px/1.5 var(--font-mono);color:#938c9f}
+.workflow-step{min-height:150px}
+@media(max-width:1000px){
+ .hero-title h1{font-size:clamp(29px,3.6vw,38px)}
+ .hero-title>p:not(.eyebrow){font-size:15px}
+ .project-card{grid-column:span 3}
+ .project-featured .project-content{padding:20px}
+ .gate-preview{padding:20px 16px 30px}
+ .gate-app-body{grid-template-columns:1fr;padding:16px}
+ .gate-system{display:none}
+}
+@media(max-width:700px){
+ .hero-title h1{font-size:clamp(27px,7vw,44px)}
+ .hero-title>p.eyebrow{font-size:10px;margin-bottom:18px}
+ .hero-title>p:not(.eyebrow){font-size:16px;line-height:1.6;margin-top:18px}
+ .project-grid{grid-template-columns:1fr;gap:18px}
+ .project-card,.project-featured{grid-column:auto;min-height:0}
+ .project-content{min-height:215px}
+ .project-featured .project-art{height:260px}
+ .project-featured .project-content{padding:22px}
+ .project-featured h3{font-size:27px}
+ .gate-preview{padding:22px 20px 34px}
+ .gate-app{max-width:390px}
+ .gate-form>strong{font-size:13px}
+ .gate-field{padding:7px 9px}
+ .gate-field>span,.gate-actions>span{font-size:10px}
+ .gate-app-bar{padding-inline:14px}
+ .project-contribution{font-size:11px}
+ .workflow-step{min-height:0}
+}

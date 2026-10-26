@@ -2,7 +2,9 @@
 
 Das JB-Monogramm ist eine eigens für Justins Portfolio gezeichnete SVG-Datei in `dist/assets/jb-monogram.svg`. Das Favicon verwendet dieselbe Form.
 
-Die Projektgrafiken in Übersicht und Fallstudien sind schematische HTML/CSS-Illustrationen. Sie bilden keine echten Anwendungen, Unternehmensdaten oder Board-Magic-Spieloberflächen ab.
+Die Grafiken der Praxisprojekte sind schematische HTML/CSS- oder SVG-Illustrationen. Board Magic zeigt zusätzlich echte Flutter-Testansichten aus dem gemeinsamen Repository; Quelle und Testkontext stehen unten.
+
+Die Pforten-App-Karte verwendet eine eigens gezeichnete HTML/CSS-Skizze einer Eingabemaske mit Sprachwahl sowie SharePoint und Archivierung. Sie ist ausdrücklich als schematische Ansicht gekennzeichnet. Feldanordnung und Layout bilden keine interne Originaloberfläche ab.
 # Interactive cube
 
 The hero uses an original RoundedBoxGeometry scene rendered with Three.js r180 (MIT), vendored locally with its LICENSE. Sources: https://github.com/mrdoob/three.js/tree/r180 and its examples/jsm/geometries/RoundedBoxGeometry.js. The addon import points to the local module.
@@ -18,10 +20,23 @@ The hero uses an original RoundedBoxGeometry scene rendered with Three.js r180 (
 - Microsoft icon provenance and usage notes: `dist/assets/microsoft/SOURCES.md`. Assets are byte-identical official SVGs. Product marks remain upright because orbit and tile rotation cancel each other.
 - Hero illustration depicts the requested Microsoft ecosystem. The existing project stack and experience claims remain grounded in the existing content sources; Fabric, Dataverse, Power Pages and Power BI are not silently added as project experience.
 - Website finish revised on 2026-10-14: all tiles use dark graphite surfaces, subtle edge highlights and light sweeps, with original logo colors. The longer Power Automate and Microsoft Fabric labels use smaller type. The violet hero headline has a restrained CSS glow; it remains selectable HTML text. These presentation changes are applied in the website stylesheet.
+- On 2026-10-26 the eight Electro Wave paths were grouped into four upper and four lower curves, shifted vertically to terminate at separate GitHub and Lebenslauf buttons. The SVG scales to the section bounds; the original path geometry and trim animations remain in use. The decorative resume-document and mobile-menu icons are local inline SVG/CSS artwork.
 
 ## Simple project SVGs
 
 The five SVG illustrations under `dist/assets/projects/` are original simple vector drawings for this portfolio: check-in form, document, schematic QR pattern, reporting chart and game die. They are illustrative symbols, not application screenshots, scannable QR codes or measured project results.
+
+## Board Magic Flutter test captures — 2026-10-26
+
+Copied byte-for-byte from the local joint-project checkout, verified against the GitHub connector at commit `4700ed6ca0de3ebd17aa4cb65f45b6909a0101e4`. These are Golden test captures of actual Flutter UI with fixtures; no public-release, live wallet or sole authorship claim is made. Used with Justin's instruction to present his shared project and visual work.
+
+| Portfolio file | Repository source | Verified Git blob SHA |
+| --- | --- | --- |
+| `dist/assets/projects/board-magic/home.png` | [Home](https://github.com/leonwwest/ludo_club/blob/4700ed6ca0de3ebd17aa4cb65f45b6909a0101e4/ludo_club/test/ui/widgets/goldens/pen_current_lobby_390x844.png) | `651f268d8aeb0b8f9d6475adcdda627ddd03389d` |
+| `dist/assets/projects/board-magic/match.png` | [Match](https://github.com/leonwwest/ludo_club/blob/4700ed6ca0de3ebd17aa4cb65f45b6909a0101e4/ludo_club/test/ui/widgets/goldens/pen_current_active_match_390x844.png) | `c402fa5b44b136112244f876c39f0c4d005e433b` |
+| `dist/assets/projects/board-magic/collection.png` | [Collection](https://github.com/leonwwest/ludo_club/blob/4700ed6ca0de3ebd17aa4cb65f45b6909a0101e4/ludo_club/test/ui/widgets/goldens/pen_economy_shop_phone.png) | `82f71f943a64a85e5538392a7ccd6aa1d9fc89b5` |
+
+Captions label them as test views with example data. The PNGs are displayed responsively without pixel editing and can be opened at original size from the case study. The Board Magic die SVG remains as an unused historical illustration.
 ## GitHub button
 
 White Invertocat SVG from the official [GitHub Brand Toolkit](https://brand.github.com/foundations/logo), downloaded from `https://brand.github.com/GitHub_Logos.zip`, file `GitHub Logos/SVG/GitHub_Invertocat_White.svg`. Saved unchanged as `dist/assets/github-mark-white.svg`, used to link to Justin's GitHub profile.
